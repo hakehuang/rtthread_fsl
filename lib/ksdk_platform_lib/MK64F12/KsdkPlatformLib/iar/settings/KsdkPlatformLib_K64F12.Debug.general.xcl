@@ -1,0 +1,13 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3_2\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3_2\arm\bin\armsim2.dll" 
+
+"C:\Users\b20222\Documents\GitHub\rtthread_fsl\lib\ksdk_platform_lib\MK64F12\KsdkPlatformLib\iar\debug\psp_arm.out" 
+
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3_2\arm\bin\armbat.dll" 
+
+--device_macro "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3_2\arm\config\debugger\Freescale\K6x.dmac" 
+
+
+
+

@@ -1,0 +1,2261 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>16874839</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\osa\src\fsl_os_abstraction_bm.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\osa\inc\fsl_os_abstraction.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\enet\fsl_enet_hal.c</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_slave_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_crc_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_shared_function.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_interrupt_manager.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_llwu_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_mcg_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_lptmr_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_lptmr_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_mcg_hal_modes.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_mpu_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_mpu_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_mpu_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pdb_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_osc_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pdb_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pdb_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pit_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pit_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_port_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_power_manager.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pit_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rcm_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rnga_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rnga_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rnga_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rtc_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sai_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sai_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sim_hal_MK64F12.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sdhc_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sdhc_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sdhc_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_smc_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_uart_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_uart_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_vref_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_uart_edma_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_uart_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_vref_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_wdog_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_vref_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_wdog_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_wdog_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_os_abstraction_bm.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_adc16_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_adc16_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_adc16_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_clock_manager.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_clock_manager_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_clock_MK64F12.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmp_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmp_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmp_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmt_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmt_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmt_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_crc_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_crc_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dac_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_power_manager.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dac_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dac_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dmamux_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_edma_master_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_master_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_edma_slave_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_slave_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_edma_shared_function.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_shared_function.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_edma_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_edma_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_edma_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_enet_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_enet_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_enet_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ewm_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ewm_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ewm_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexbus_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexbus_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexbus_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexcan_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexcan_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexcan_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ftm_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ftm_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ftm_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_gpio_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_gpio_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_gpio_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_hwtimer.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_hwtimer_pit.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_hwtimer_systick.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_master_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_slave_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_shared_function.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_interrupt_manager.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_llwu_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_lptmr_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_lptmr_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_lptmr_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_mcg_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_mcg_hal_modes.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_mpu_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_mpu_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_mpu_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_osc_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pdb_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pdb_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pdb_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pit_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pit_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pit_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_port_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rtc_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sai_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_mcg_hal_modes.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_mpu_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmt_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmt_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmp_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmp_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmp_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_clock_MK64F12.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_clock_manager_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_adc16_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_clock_manager.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_adc16_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_os_abstraction_bm.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_adc16_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_slave_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_master_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_hwtimer_systick.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_hwtimer_pit.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_hwtimer.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_gpio_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_gpio_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_gpio_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ftm_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ftm_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ftm_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexcan_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexcan_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexcan_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexbus_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexbus_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexbus_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ewm_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ewm_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ewm_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_enet_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_enet_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_enet_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_edma_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_edma_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_edma_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_shared_function.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_slave_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_edma_shared_function.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_edma_slave_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_edma_master_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_master_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dmamux_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dac_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dac_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dac_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_crc_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_crc_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_crc_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmt_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sdhc_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sai_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sai_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rtc_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rnga_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rnga_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rnga_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_wdog_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_wdog_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_mpu_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_lptmr_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_shared_function.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_interrupt_manager.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_lptmr_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_llwu_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_lptmr_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pdb_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pdb_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_osc_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_vref_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_power_manager.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_vref_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pit_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pit_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_wdog_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pit_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pdb_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_port_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_mpu_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_mcg_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rcm_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\ewm\fsl_ewm_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\inc\fsl_osc_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\ewm\fsl_ewm_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\ewm\fsl_ewm_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\flexbus\fsl_flexbus_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\flexbus\fsl_flexbus_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\flexbus\fsl_flexbus_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\flexcan\fsl_flexcan_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\flexcan\fsl_flexcan_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\flexcan\fsl_flexcan_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\ftm\fsl_ftm_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\ftm\fsl_ftm_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\ftm\fsl_ftm_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\gpio\fsl_gpio_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\gpio\fsl_gpio_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\gpio\fsl_gpio_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\src\hwtimer\fsl_hwtimer.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\src\hwtimer\fsl_hwtimer_pit.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\src\hwtimer\fsl_hwtimer_systick.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\i2c\fsl_i2c_master_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\i2c\fsl_i2c_slave_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\i2c\fsl_i2c_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\i2c\fsl_i2c_shared_function.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\i2c\fsl_i2c_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\src\interrupt\fsl_interrupt_manager.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\inc\fsl_interrupt_manager.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\llwu\fsl_llwu_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\lptmr\fsl_lptmr_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\lptmr\fsl_lptmr_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\lptmr\fsl_lptmr_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\inc\fsl_lptmr_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\mcg\fsl_mcg_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\inc\fsl_mcg_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\mcg\fsl_mcg_hal_modes.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\inc\fsl_mcg_hal_modes.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\mpu\fsl_mpu_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\mpu\fsl_mpu_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\mpu\fsl_mpu_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\osc\fsl_osc_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\osa\inc\fsl_os_abstraction_bm.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\adc16\fsl_adc16_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\adc16\fsl_adc16_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\inc\fsl_adc16_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\adc16\fsl_adc16_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\inc\fsl_adc16_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\src\clock\fsl_clock_manager.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\inc\fsl_clock_manager.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\src\clock\fsl_clock_manager_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\src\clock\MK64F12\fsl_clock_MK64F12.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\src\clock\MK64F12\fsl_clock_MK64F12.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\cmp\fsl_cmp_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\cmp\fsl_cmp_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\inc\fsl_cmp_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\cmp\fsl_cmp_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\inc\fsl_cmp_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\cmt\fsl_cmt_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\cmt\fsl_cmt_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\inc\fsl_cmt_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\cmt\fsl_cmt_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\inc\fsl_cmt_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\crc\fsl_crc_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\crc\fsl_crc_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\crc\fsl_crc_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dac\fsl_dac_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dac\fsl_dac_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\dac\fsl_dac_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\dmamux\fsl_dmamux_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dspi\fsl_dspi_edma_master_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dspi\fsl_dspi_master_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dspi\fsl_dspi_edma_slave_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dspi\fsl_dspi_slave_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dspi\fsl_dspi_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dspi\fsl_dspi_edma_shared_function.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dspi\fsl_dspi_shared_function.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\dspi\fsl_dspi_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\edma\fsl_edma_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\edma\fsl_edma_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\edma\fsl_edma_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\enet\fsl_enet_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\enet\fsl_enet_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\pdb\fsl_pdb_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\pdb\fsl_pdb_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\pdb\fsl_pdb_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\pit\fsl_pit_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\pit\fsl_pit_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\pit\fsl_pit_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\port\fsl_port_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\src\power\fsl_power_manager.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\rcm\fsl_rcm_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\rnga\fsl_rnga_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\rnga\fsl_rnga_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\rnga\fsl_rnga_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\rtc\fsl_rtc_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\rtc\fsl_rtc_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\rtc\fsl_rtc_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\inc\fsl_rtc_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\sai\fsl_sai_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\sai\fsl_sai_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\sai\fsl_sai_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\sdhc\fsl_sdhc_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\sdhc\fsl_sdhc_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\sdhc\fsl_sdhc_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\inc\fsl_sim_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\sim\MK64F12\fsl_sim_hal_MK64F12.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\sim\MK64F12\fsl_sim_hal_MK64F12.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\smc\fsl_smc_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\uart\fsl_uart_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\uart\fsl_uart_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\uart\fsl_uart_edma_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\uart\fsl_uart_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\vref\fsl_vref_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\vref\fsl_vref_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\vref\fsl_vref_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\wdog\fsl_wdog_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\wdog\fsl_wdog_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\wdog\fsl_wdog_hal.c</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_adc16_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_adc16_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rtc_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_shared_function.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sai_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_edma_shared_function.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rtc_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_edma_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_os_abstraction_bm.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_master_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_adc16_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_clock_manager.o</file>
+      <file>$PROJ_DIR$\debug\libksdk_platform.a</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_clock_manager_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_clock_MK64F12.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmp_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmp_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmp_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmt_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmt_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmt_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_crc_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_crc_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_crc_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dac_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dac_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dac_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dmamux_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_edma_master_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_edma_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_master_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_edma_slave_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_slave_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_dspi_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_edma_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_enet_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_enet_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_enet_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ewm_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexbus_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ewm_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ewm_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexbus_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexbus_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexcan_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexcan_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flexcan_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ftm_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ftm_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_ftm_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_gpio_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_gpio_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_gpio_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_hwtimer.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_hwtimer_pit.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_hwtimer_systick.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_lptmr_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rcm_hal.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rnga_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rnga_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rnga_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rtc_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rtc_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rtc_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sai_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sai_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sai_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sdhc_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sdhc_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sdhc_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sim_hal_MK64F12.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_smc_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_uart_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_uart_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_uart_edma_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_uart_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_vref_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_vref_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_vref_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_wdog_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_wdog_driver.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_wdog_hal.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\KsdkPlatformLib_K64F12.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\CMSIS\Include\core_cmSimd.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\CMSIS\Include\core_cmInstr.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\CMSIS\Include\core_cm4.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\devices\MK64F12\include\MK64F12_features.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\devices\MK64F12\include\MK64F12.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\devices\MK64F12\include\MK64F12_extension.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\devices\MK64F12\include\fsl_bitaccess.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\devices\fsl_device_registers.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\CMSIS\Include\core_cmFunc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\devices\MK64F12\startup\system_MK64F12.h</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rtc_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sdhc_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sdhc_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sim_hal_MK64F12.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_uart_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_uart_edma_driver.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_smc_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_uart_common.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_uart_hal.__cstat.et</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_vref_common.__cstat.et</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\devices\MK64F12\startup\iar\startup_MK64F12.s</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\devices\startup.c</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\osa\src\fsl_os_abstraction_bm.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 339</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 138</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 436 433 435 434 431 437 215 425 428 429 430 239 244 432 426 427 424 1 260 423 422 421 253 415 420 419 418 417 416 389 246 316 263 318 248</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\enet\fsl_enet_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 368</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 160</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>IARCHIVE</name>
+          <file> 343</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\ewm\fsl_ewm_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 82</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 369</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 159</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\ewm\fsl_ewm_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 83</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 371</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 158</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\ewm\fsl_ewm_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 84</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 372</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 157</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\flexbus\fsl_flexbus_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 85</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 370</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 156</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\flexbus\fsl_flexbus_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 86</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 373</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 155</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\flexbus\fsl_flexbus_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 87</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 374</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 154</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\flexcan\fsl_flexcan_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 88</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 375</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 153</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\flexcan\fsl_flexcan_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 89</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 376</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 152</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\flexcan\fsl_flexcan_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 377</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 151</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\ftm\fsl_ftm_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 91</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 378</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 150</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\ftm\fsl_ftm_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 92</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 379</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 149</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\ftm\fsl_ftm_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 93</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 380</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 148</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\gpio\fsl_gpio_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 94</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 381</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 147</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\gpio\fsl_gpio_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 95</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 382</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 146</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\gpio\fsl_gpio_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 96</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 383</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 145</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\src\hwtimer\fsl_hwtimer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 97</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 384</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 144</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\src\hwtimer\fsl_hwtimer_pit.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 98</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 385</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 143</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\src\hwtimer\fsl_hwtimer_systick.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 99</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 386</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 142</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\i2c\fsl_i2c_master_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 100</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 340</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 141</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\i2c\fsl_i2c_slave_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 101</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 3</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 140</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\i2c\fsl_i2c_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 102</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 6</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 192</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\i2c\fsl_i2c_shared_function.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 103</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 194</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\i2c\fsl_i2c_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 104</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 7</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 127</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\src\interrupt\fsl_interrupt_manager.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 105</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 195</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\llwu\fsl_llwu_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 106</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 197</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\lptmr\fsl_lptmr_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 107</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 387</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 193</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\lptmr\fsl_lptmr_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 108</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 12</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 196</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\lptmr\fsl_lptmr_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 109</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 11</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 198</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\mcg\fsl_mcg_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 10</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 212</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\mcg\fsl_mcg_hal_modes.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 13</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 125</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\mpu\fsl_mpu_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 112</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 126</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\mpu\fsl_mpu_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 211</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\mpu\fsl_mpu_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 114</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 16</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 191</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\osc\fsl_osc_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 201</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\adc16\fsl_adc16_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 139</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 426 434 437 425 428 416 431 433 420 419 418 417 427 432 429 435 423 422 421 436 389 415</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\adc16\fsl_adc16_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 50</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 137</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 389 215 419 239 423 422 424 428 418 417 431 430 258 429 421 433 435 420 416 316 256 260 425 426 437 436 434 427 415 263 246 432 318 248</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\adc16\fsl_adc16_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 331</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 135</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 426 429 428 424 423 422 433 432 435 421 431 427 430 425 437 436 434 258 420 419 418 417 416 389 415</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\src\clock\fsl_clock_manager.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 342</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 136</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 432 417 420 389 435 215 1 430 419 418 428 433 425 416 429 431 260 309 426 437 423 422 421 436 434 427 424 246 415 316 263 318 248 253</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\src\clock\fsl_clock_manager_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 344</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 134</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 434 433 428 436 435 426 429 421 246 431 437 423 422 427 432 260 420 419 418 425 417 416 389 415 424 318 248 430 316 263 215</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\src\clock\MK64F12\fsl_clock_MK64F12.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 54</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 345</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 133</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 429 421 426 415 433 435 431 427 424 246 316 423 422 428 437 436 434 215 432 430 260 425 420 419 418 417 416 389 318 263 248</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\cmp\fsl_cmp_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 346</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 132</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 426 434 437 425 428 416 431 433 420 419 418 417 427 432 429 435 423 422 421 436 389 415</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\cmp\fsl_cmp_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 347</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 131</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 420 433 239 428 429 421 435 416 424 431 430 268 423 422 419 418 417 389 266 260 425 426 437 436 434 427 432 318 248 415 316 263 246 215</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\cmp\fsl_cmp_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 348</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 130</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 433 428 419 429 424 425 432 435 420 431 427 430 423 422 421 426 437 436 434 268 418 417 416 389 415</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\cmt\fsl_cmt_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 349</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 129</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 419 434 425 428 416 420 418 433 426 431 437 417 427 432 429 435 423 422 421 436 389 415</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\cmt\fsl_cmt_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 350</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 128</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 420 416 435 424 246 273 271 428 433 425 419 418 417 389 432 429 431 239 430 316 263 423 422 421 426 437 436 434 427 318 248 260 415 215</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\cmt\fsl_cmt_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 351</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 181</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\crc\fsl_crc_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 352</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 180</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\crc\fsl_crc_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 353</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 179</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\crc\fsl_crc_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 354</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 178</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dac\fsl_dac_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 63</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 355</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 177</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dac\fsl_dac_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 356</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 176</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\dac\fsl_dac_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 357</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 175</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\dmamux\fsl_dmamux_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 67</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 358</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 173</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dspi\fsl_dspi_edma_master_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 68</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 359</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 171</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dspi\fsl_dspi_master_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 69</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 361</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 172</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dspi\fsl_dspi_edma_slave_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 362</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 170</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dspi\fsl_dspi_slave_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 71</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 363</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 167</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dspi\fsl_dspi_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 364</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 174</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dspi\fsl_dspi_edma_shared_function.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 336</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 168</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\dspi\fsl_dspi_shared_function.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 333</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 166</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\dspi\fsl_dspi_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 75</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 335</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 169</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\edma\fsl_edma_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 76</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 338</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 165</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\edma\fsl_edma_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 360</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 164</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\edma\fsl_edma_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 78</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 365</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 163</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\enet\fsl_enet_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 366</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 162</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\enet\fsl_enet_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 80</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 367</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 161</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\pdb\fsl_pdb_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 116</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 199</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\pdb\fsl_pdb_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 19</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 200</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\pdb\fsl_pdb_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 118</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 209</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\pit\fsl_pit_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 119</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 21</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 205</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\pit\fsl_pit_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 120</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 22</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 206</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\pit\fsl_pit_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 121</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 208</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\port\fsl_port_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 122</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 23</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 210</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\system\src\power\fsl_power_manager.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 64</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 203</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\rcm\fsl_rcm_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 388</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 213</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\rnga\fsl_rnga_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 390</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 186</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\rnga\fsl_rnga_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 391</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 188</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\rnga\fsl_rnga_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 392</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 29</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 187</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\rtc\fsl_rtc_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 393</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 185</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\rtc\fsl_rtc_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 394</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 337</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 438</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\rtc\fsl_rtc_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 395</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 332</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 123</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\sai\fsl_sai_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 396</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 334</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 184</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\sai\fsl_sai_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 397</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 183</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\sai\fsl_sai_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 398</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 124</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\sdhc\fsl_sdhc_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 399</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 440</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\sdhc\fsl_sdhc_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 400</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 439</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\sdhc\fsl_sdhc_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 401</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 182</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\sim\MK64F12\fsl_sim_hal_MK64F12.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 402</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 441</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\smc\fsl_smc_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 403</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 37</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 444</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\uart\fsl_uart_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 404</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 445</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\uart\fsl_uart_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 405</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 39</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 442</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\uart\fsl_uart_edma_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 406</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 443</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\uart\fsl_uart_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 407</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 446</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\vref\fsl_vref_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 408</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 40</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 447</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\vref\fsl_vref_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 409</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 202</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\vref\fsl_vref_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 410</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 45</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 204</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\wdog\fsl_wdog_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 411</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 44</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 207</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\drivers\src\wdog\fsl_wdog_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 412</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 46</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 190</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\bsp\kinetis\platform\hal\src\wdog\fsl_wdog_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 413</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 47</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 189</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>IARCHIVE</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+
