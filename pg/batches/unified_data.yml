@@ -1,0 +1,617 @@
+---
+hello_world:
+  meta_components:
+  - twrk64f120m
+  - MK64FN1M0xxx12
+  - fsl_uart
+  - fsl_gpio
+  - fsl_smc
+  - fsl_pit
+  - fsl_enet
+  - fsl_common
+  - fsl_flash
+  - finish
+  - rt_core
+  - rt_drivers
+  - driver_wrapper
+  - cortex-m4
+  iar:
+    targets:
+      debug:
+        identifier: Debug
+        target: intflash
+        cc_defines:
+          DEBUG: 
+          TOOLCHAIN_IAR: 
+          TWR_K64F120M: 
+          TARGET_K64F: 
+          CPU_MK64FN1M0VMD12: 
+        cxx_defines:
+          DEBUG: 
+          TOOLCHAIN_IAR: 
+        as_defines: {}
+        ld_flags: []
+        cc_include:
+        - path: hello_world
+          rootdir: app_path
+        - path: boards/twrk64f120m
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/drivers
+          rootdir: fsl_sdk_path
+        - path: components/finsh
+          rootdir: rt-thread-path
+        - path: include
+          rootdir: rt-thread-path
+        - path: components/drivers/include/drivers
+          rootdir: rt-thread-path
+        - path: components/drivers/include/
+          rootdir: rt-thread-path
+        cc_flags:
+        - "--cpu=Cortex-M4"
+        - "--fpu=vfpv4_sp_d16"
+        as_flags:
+        - "--cpu Cortex-M4"
+        - "--fpu=vfpv4_sp_d16"
+        cxx_flags:
+        - "--cpu=Cortex-M4"
+        - "--fpu=vfpv4_sp_d16"
+        as_include: []
+        cp_defines:
+          MK64FN1M0xxx12: Freescale MK64FN1M0xxx12
+        cxx_include:
+        - path: devices/MK64F12/
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/drivers
+          rootdir: fsl_sdk_path
+        linker_file:
+          path: devices/MK64F12/iar/MK64FN1M0xxx12_flash.icf
+          rootdir: fsl_sdk_path
+        config: debug
+        libraries: []
+      release:
+        identifier: Release
+        target: intflash
+        cc_defines:
+          NDEBUG: 
+          TOOLCHAIN_IAR: 
+          TWR_K64F120M: 
+          TARGET_K64F: 
+          CPU_MK64FN1M0VMD12: 
+        cxx_defines:
+          TOOLCHAIN_IAR: 
+        as_defines: {}
+        ld_flags: []
+        cc_include:
+        - path: hello_world
+          rootdir: app_path
+        - path: boards/twrk64f120m
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/drivers
+          rootdir: fsl_sdk_path
+        - path: components/finsh
+          rootdir: rt-thread-path
+        - path: include
+          rootdir: rt-thread-path
+        - path: components/drivers/include/drivers
+          rootdir: rt-thread-path
+        - path: components/drivers/include/
+          rootdir: rt-thread-path
+        cc_flags:
+        - "--cpu=Cortex-M4"
+        - "--fpu=vfpv4_sp_d16"
+        as_flags:
+        - "--cpu Cortex-M4"
+        - "--fpu=vfpv4_sp_d16"
+        cxx_flags:
+        - "--cpu=Cortex-M4"
+        - "--fpu=vfpv4_sp_d16"
+        as_include: []
+        cp_defines:
+          MK64FN1M0xxx12: Freescale MK64FN1M0xxx12
+        cxx_include:
+        - path: devices/MK64F12/
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/drivers
+          rootdir: fsl_sdk_path
+        linker_file:
+          path: devices/MK64F12/iar/MK64FN1M0xxx12_flash.icf
+          rootdir: fsl_sdk_path
+        config: release
+        libraries: []
+    type: application
+    templates:
+    - templates/iar/general.eww
+    - templates/iar/general.ewp
+    outdir: twrk64f120m/hello_world/iar
+    source:
+    - path: devices/MK64F12/iar/startup_MK64F12.s
+      virtual-dir: startup
+      rootdir: fsl_sdk_path
+    - source: libcpu/arm/cortex-m4/context_iar.S
+      virtual-dir: context
+      rootdir: rt-thread-path
+    - &1
+      path: hello_world/main.cpp
+      virtual-dir: hello_world
+      rootdir: app_path
+    - &2
+      path: boards/twrk64f120m/clock_config.c
+      virtual-dir: device
+      rootdir: fsl_sdk_path
+    - &3
+      path: boards/twrk64f120m/clock_config.h
+      virtual-dir: device
+      rootdir: fsl_sdk_path
+    - &4
+      path: boards/twrk64f120m/pin_mux.c
+      virtual-dir: device
+      rootdir: fsl_sdk_path
+    - &5
+      path: boards/twrk64f120m/pin_mux.h
+      virtual-dir: device
+      rootdir: fsl_sdk_path
+    - &6
+      path: devices/MK64F12/MK64F12.h
+      virtual-dir: device
+      rootdir: fsl_sdk_path
+    - &7
+      path: devices/MK64F12/MK64F12_features.h
+      virtual-dir: device
+      rootdir: fsl_sdk_path
+    - &8
+      path: devices/MK64F12/fsl_device_registers.h
+      virtual-dir: device
+      rootdir: fsl_sdk_path
+    - &9
+      path: devices/MK64F12/system_MK64F12.h
+      virtual-dir: device
+      rootdir: fsl_sdk_path
+    - &10
+      path: devices/MK64F12/system_MK64F12.c
+      virtual-dir: device
+      rootdir: fsl_sdk_path
+    - path: devices/MK64F12/drivers/fsl_uart.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_uart.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_gpio.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_gpio.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_smc.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_smc.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_pit.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_pit.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_enet.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_enet.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_common.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_common.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_flash.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_flash.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - &11
+      source: libcpu/arm/common/backtrace.c
+      virtual-dir: arm
+      rootdir: rt-thread-path
+    - &12
+      source: libcpu/arm/common/div0.c
+      virtual-dir: arm
+      rootdir: rt-thread-path
+    - &13
+      source: libcpu/arm/common/showmem.c
+      virtual-dir: arm
+      rootdir: rt-thread-path
+    - &14
+      source: libcpu/arm/cortex-m4/cpuport.c
+      virtual-dir: cortex_m4
+      rootdir: rt-thread-path
+  document:
+    board: frdmk64f
+    project_name: hello_world
+  mdk:
+    targets:
+      debug:
+        identifier: Debug
+        target: intflash
+        cc_defines:
+          DEBUG: 
+          KEIL: 
+          TOOLCHAIN_ARM_STD: 
+          TWR_K64F120M: 
+          TARGET_K64F: 
+          CPU_MK64FN1M0VMD12: 
+        cxx_defines:
+          DEBUG: 
+          TOOLCHAIN_ARM_STD: 
+        as_defines: {}
+        ld_flags:
+        - "--cpu Cortex-M4.fp"
+        cc_include:
+        - path: hello_world
+          rootdir: app_path
+        - path: boards/twrk64f120m
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/drivers
+          rootdir: fsl_sdk_path
+        - path: components/finsh
+          rootdir: rt-thread-path
+        - path: include
+          rootdir: rt-thread-path
+        - path: components/drivers/include/drivers
+          rootdir: rt-thread-path
+        - path: components/drivers/include/
+          rootdir: rt-thread-path
+        cc_flags:
+        - "--cpu Cortex-M4.fp"
+        - "--library_type=standardlib"
+        - "--c99"
+        - "--diag_suppress=1296,186"
+        - "--library_interface=armcc"
+        as_flags:
+        - "--cpu Cortex-M4.fp"
+        cxx_flags:
+        - "--cpu Cortex-M4.fp"
+        - "--library_type=standardlib"
+        - "--c99"
+        - "--diag_suppress=1296,186"
+        - "--library_interface=armcc"
+        as_include: []
+        cp_defines:
+          MK64FN1M0xxx12: Freescale
+        cxx_include:
+        - path: devices/MK64F12/
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/drivers
+          rootdir: fsl_sdk_path
+        linker_file:
+          path: devices/MK64F12/arm/MK64FN1M0xxx12_flash.sct
+          rootdir: fsl_sdk_path
+        config: debug
+        libraries: []
+      release:
+        identifier: Release
+        target: intflash
+        cc_defines:
+          NDEBUG: 
+          KEIL: 
+          TOOLCHAIN_ARM_STD: 
+          TWR_K64F120M: 
+          TARGET_K64F: 
+          CPU_MK64FN1M0VMD12: 
+        cxx_defines:
+          TOOLCHAIN_ARM_STD: 
+        as_defines: {}
+        ld_flags:
+        - "--cpu Cortex-M4.fp"
+        cc_include:
+        - path: hello_world
+          rootdir: app_path
+        - path: boards/twrk64f120m
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/drivers
+          rootdir: fsl_sdk_path
+        - path: components/finsh
+          rootdir: rt-thread-path
+        - path: include
+          rootdir: rt-thread-path
+        - path: components/drivers/include/drivers
+          rootdir: rt-thread-path
+        - path: components/drivers/include/
+          rootdir: rt-thread-path
+        cc_flags:
+        - "--cpu Cortex-M4.fp"
+        - "--library_type=standardlib"
+        - "--c99"
+        - "--diag_suppress=1296,186"
+        - "--library_interface=armcc"
+        as_flags:
+        - "--cpu Cortex-M4.fp"
+        cxx_flags:
+        - "--cpu Cortex-M4.fp"
+        - "--library_type=standardlib"
+        - "--c99"
+        - "--diag_suppress=1296,186"
+        - "--library_interface=armcc"
+        as_include: []
+        cp_defines:
+          MK64FN1M0xxx12: Freescale
+        cxx_include:
+        - path: devices/MK64F12/
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/drivers
+          rootdir: fsl_sdk_path
+        linker_file:
+          path: devices/MK64F12/arm/MK64FN1M0xxx12_flash.sct
+          rootdir: fsl_sdk_path
+        config: release
+        libraries: []
+    type: application
+    templates:
+    - templates/mdk/project_mpw.xsd
+    - templates/mdk/k64f120m.uvprojx
+    outdir: twrk64f120m/hello_world/mdk
+    source:
+    - path: devices/MK64F12/arm/startup_MK64F12.s
+      virtual-dir: startup
+      rootdir: fsl_sdk_path
+    - source: libcpu/arm/cortex-m4/context_rvds.S
+      virtual-dir: context
+      rootdir: rt-thread-path
+    - *1
+    - *2
+    - *3
+    - *4
+    - *5
+    - *6
+    - *7
+    - *8
+    - *9
+    - *10
+    - path: devices/MK64F12/drivers/fsl_uart.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_uart.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_gpio.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_gpio.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_smc.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_smc.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_pit.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_pit.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_enet.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_enet.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_common.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_common.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_flash.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_flash.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - *11
+    - *12
+    - *13
+    - *14
+  cmake:
+    targets:
+      debug:
+        identifier: Debug
+        target: 128kb-ram
+        cc_defines:
+          DEBUG: 
+          TOOLCHAIN_GCC: 
+          TWR_K64F120M: 
+          TARGET_K64F: 
+          CPU_MK64FN1M0VMD12: 
+        cxx_defines:
+          DEBUG: 
+          TOOLCHAIN_GCC: 
+        as_defines: {}
+        ld_flags:
+        - "-mcpu=cortex-m4"
+        - "-mfloat-abi=hard"
+        - "-mfpu=fpv4-sp-d16"
+        cc_include:
+        - path: hello_world
+          rootdir: app_path
+        - path: boards/twrk64f120m
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/drivers
+          rootdir: fsl_sdk_path
+        - path: components/finsh
+          rootdir: rt-thread-path
+        - path: include
+          rootdir: rt-thread-path
+        - path: components/drivers/include/drivers
+          rootdir: rt-thread-path
+        - path: components/drivers/include/
+          rootdir: rt-thread-path
+        cc_flags:
+        - "-mcpu=cortex-m4"
+        - "-mfloat-abi=hard"
+        - "-mfpu=fpv4-sp-d16"
+        - "-mthumb"
+        as_flags:
+        - "-mcpu=cortex-m4"
+        - "-mfloat-abi=hard"
+        - "-mfpu=fpv4-sp-d16"
+        cxx_flags:
+        - "-mcpu=cortex-m4"
+        - "-mfloat-abi=hard"
+        - "-mfpu=fpv4-sp-d16"
+        - "-mthumb"
+        - "-MMD"
+        - "-MP"
+        as_include: []
+        cp_defines:
+          MK64FN1M0xxx12: Freescale Semiconductor
+        cxx_include:
+        - path: devices/MK64F12/
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/drivers
+          rootdir: fsl_sdk_path
+        linker_file:
+          path: devices/MK64F12/gcc/MK64FN1M0xxx12_flash.ld
+          rootdir: fsl_sdk_path
+        config: debug
+        libraries: []
+      release:
+        identifier: Release
+        target: 128kb-ram
+        cc_defines:
+          NDEBUG: 
+          TOOLCHAIN_GCC: 
+          TWR_K64F120M: 
+          TARGET_K64F: 
+          CPU_MK64FN1M0VMD12: 
+        cxx_defines:
+          TOOLCHAIN_GCC: 
+        as_defines: {}
+        ld_flags:
+        - "-mcpu=cortex-m4"
+        - "-mfloat-abi=hard"
+        - "-mfpu=fpv4-sp-d16"
+        cc_include:
+        - path: hello_world
+          rootdir: app_path
+        - path: boards/twrk64f120m
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/drivers
+          rootdir: fsl_sdk_path
+        - path: components/finsh
+          rootdir: rt-thread-path
+        - path: include
+          rootdir: rt-thread-path
+        - path: components/drivers/include/drivers
+          rootdir: rt-thread-path
+        - path: components/drivers/include/
+          rootdir: rt-thread-path
+        cc_flags:
+        - "-mcpu=cortex-m4"
+        - "-mfloat-abi=hard"
+        - "-mfpu=fpv4-sp-d16"
+        - "-mthumb"
+        as_flags:
+        - "-mcpu=cortex-m4"
+        - "-mfloat-abi=hard"
+        - "-mfpu=fpv4-sp-d16"
+        cxx_flags:
+        - "-mcpu=cortex-m4"
+        - "-mfloat-abi=hard"
+        - "-mfpu=fpv4-sp-d16"
+        - "-mthumb"
+        - "-MMD"
+        - "-MP"
+        as_include: []
+        cp_defines:
+          MK64FN1M0xxx12: Freescale Semiconductor
+        cxx_include:
+        - path: devices/MK64F12/
+          rootdir: fsl_sdk_path
+        - path: devices/MK64F12/drivers
+          rootdir: fsl_sdk_path
+        linker_file:
+          path: devices/MK64F12/gcc/MK64FN1M0xxx12_flash.ld
+          rootdir: fsl_sdk_path
+        config: release
+        libraries: []
+    type: application
+    templates: 
+    group: cmake
+    outdir: twrk64f120m/hello_world/cmake
+    source:
+    - path: devices/MK64F12/gcc/startup_MK64F12.S
+      virtual-dir: startup
+      rootdir: fsl_sdk_path
+    - *1
+    - *2
+    - *3
+    - *4
+    - *5
+    - *6
+    - *7
+    - *8
+    - *9
+    - *10
+    - path: devices/MK64F12/drivers/fsl_uart.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_uart.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_gpio.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_gpio.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_smc.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_smc.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_pit.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_pit.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_enet.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_enet.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_common.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_common.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_flash.c
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - path: devices/MK64F12/drivers/fsl_flash.h
+      rootdir: fsl_sdk_path
+      virtual_dir: drivers
+    - *11
+    - *12
+    - *13
+    - *14

@@ -1,0 +1,8 @@
+---
+__load__:
+- targets/nxp/sdk/fsl_common.yml
+fsl_common:
+  configuration:
+    section-type: component
+    meta_components:
+    - fsl_common

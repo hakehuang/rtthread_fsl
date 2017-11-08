@@ -1,0 +1,8 @@
+---
+__load__:
+- targets/nxp/sdk/fsl_sai.yml
+fsl_sai:
+  configuration:
+    section-type: component
+    meta_components:
+    - fsl_sai

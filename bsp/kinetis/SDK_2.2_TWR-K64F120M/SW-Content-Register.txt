@@ -1,0 +1,125 @@
+Release Name: MCUXpresso Software Development Kit (SDK)
+Release Version: 2.2.0
+
+CMSIS Core header files    Author: ARM                                       
+                           parentversion: 4.5                                
+                           URL: http://silver.arm.com                        
+                           name: CMSIS Core header files                     
+                           Format: source code                               
+                           License: Open Source - BSD-3-Clause               
+                           Location: CMSIS/Include                           
+                           version: 4.3 (CMSIS Download 4.5)                 
+                           Description: Industry-standard header files       
+                           distributes by ARM for cortex-M cores             
+
+CMSIS DSP Library          name: CMSIS DSP Library                           
+                           Format: source code                               
+                           License: Open Source - BSD-3-Clause               
+                           parentversion: 4.5                                
+                           Author: ARM                                       
+                           version: 1.4.5 (CMSIS download 4.5)               
+                           URL: http://silver.arm.com                        
+                           Location: CMSIS/DSP_Lib                           
+                           Description: A digital signal processing library  
+                           for Cortex-M cores from ARM                       
+
+DMA Manager                Format: source code                               
+                           Location: middleware/dma_manager_2.1.0            
+                           Description: A software component used for manage 
+                           on-chip DMA channel resources.                    
+                           name: DMA Manager                                 
+                           License: Open Source - BSD-3-Clause               
+                           version: 2.1.0                                    
+                           Author: Freescale                                 
+
+FatFs                      Approved Open Source License: Yes                 
+                           Author: Electronic Lives Mfg. by ChaN of Ageo     
+                           city, Japan (hobbyist)                            
+                           Description: FatFs is a generic FAT file system   
+                           module for small embedded systems.                
+                           Format: source code                               
+                           License: Open Source - FatFs License,             
+                           <rootfolder>/middleware/fatfs/doc/en/appnote.html 
+                           Location: middleware/fatfs_0.12b                  
+                           name: FatFs                                       
+                           URL: http://elm-chan.org/fsw/ff/00index_e.html    
+                           version: 0.12b                                    
+
+KSDK CMSIS Peripheral      Author: Freescale                                 
+Drivers                    version: 2.x.x                                    
+                           Format: source code                               
+                           Description: CMSIS Peripheral drivers are designed
+                           to provide hardware independent APIs which make   
+                           application reusable across a wide range of       
+                           supported microcontroller devices.                
+                           name: KSDK CMSIS Peripheral Drivers               
+                           Location: devices/<device>/cmsis_drivers          
+                           License: Open Source - Apache 2.0 & BSD-3-Clause  
+
+KSDK Peripheral Driver     Description: Peripherral drivers are designed for 
+                           the most common use cases indentified for         
+                           the underlying hardware block.                    
+                           Author: Freescale                                 
+                           Version: 2.x.x                                    
+                           License: Open Source - BSD-3-Clause               
+                           Format: source code                               
+                           Location: devices/<device_name>/drivers           
+
+MBED TLS stack             Author: ARM                                       
+                           Description: Cryptographic and SSL/TLS Library    
+                           Format: source code                               
+                           License: Apache-2-Clause                          
+                           Location: middleware/mbedtls_2.3.0                
+                           name: MBED TLS stack                              
+                           URL: https://tls.mbed.org/                        
+                           version: 2.3.0                                    
+
+SD MMC Card middleware     name: SD MMC Card middleware                      
+                           Location: middleware/sdmmc_2.1.2                  
+                           License: Open Source - BSD-3-Clause               
+                           Description: A software componnet support SD card,
+                           eMMC card.                                        
+                           Author: Freescale                                 
+                           version: 2.1.2                                    
+                           Format: source code                               
+
+USB                        version: 1.6.3                                    
+                           Location: middleware/usb_1.6.3                    
+                           Description: Freescale USB stack. This is a       
+                           version of the USB stack that has been integrated 
+                           with the MCUXpresso SDK.                          
+                           License: Open Source - BSD-3-Clause               
+                           Author: Freescale                                 
+                           name: USB                                         
+                           Format: source code                               
+
+lwIP TCP/IP Stack          Author: Swedish Institute of Computer Science     
+                           Description: A light-weight TCP/IP stack          
+                           Format: source code                               
+                           License: Open Source - BSD-3-Clause               
+                           Location: middleware/lwip_2.0.0                   
+                           name: lwIP TCP/IP Stack                           
+                           URL: http://savannah.nongnu.org/projects/lwip     
+                           version: 2.0.0                                    
+
+mmCAU S/W Library          Author: Freescale                                 
+                           Description: S/W library that works with the      
+                           memory-mapped cryptographic acceleration unit     
+                           present on some MCUXpresso SoCs                   
+                           Format: source code                               
+                           License: Open Source - BSD-3-Clause               
+                           Location: middleware/mmcau_2.0.0                  
+                           name: mmCAU S/W Library                           
+                           version: 2.0.0                                    
+
+wolfSSL                    Author: wolfSSL Inc.                              
+                           Description: wolfSSL is cryptography and SSL/TLS  
+                           library                                           
+                           Format: source code                               
+                           License: 3rd party evaluation. See <rootfolder>/mi
+                           ddleware/wolfssl_3.9.8/wolfSSL_cyaSSL_evaluation_l
+                           icense_agreement.pdf                              
+                           Location: middleware/wolfssl_3.9.8                
+                           name: wolfSSL                                     
+                           URL: https://www.wolfssl.com                      
+                           version: 3.9.8                                    

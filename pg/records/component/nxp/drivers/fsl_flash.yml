@@ -1,0 +1,8 @@
+---
+__load__:
+- targets/nxp/sdk/fsl_flash.yml
+fsl_flash:
+  configuration:
+    section-type: component
+    meta_components:
+    - fsl_flash

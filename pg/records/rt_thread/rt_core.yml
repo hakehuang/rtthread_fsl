@@ -1,0 +1,61 @@
+
+rt_core:
+  configuration:
+    tools:
+      __common__:
+        config:
+          __common__:
+            cc_include:
+            - path: include
+              rootdir: "rt-thread-path"
+  modules:
+    core:
+      mode: post-process-app
+      name              : core
+      files:
+        - source        : src/clock.c
+          virtual-dir   : rt_core
+          rootdir:      "rt-thread-path" 
+        - source        : src/device.c
+          virtual-dir   : rt_core
+          rootdir:      "rt-thread-path" 
+        - source        : src/idle.c
+          virtual-dir   : rt_core
+          rootdir:      "rt-thread-path" 
+        - source        : src/ipc.c
+          virtual-dir   : rt_core
+          rootdir:      "rt-thread-path" 
+        - source        : src/irq.c
+          virtual-dir   : rt_core
+          rootdir:      "rt-thread-path" 
+        - source        : src/kservice.c
+          virtual-dir   : rt_core
+          rootdir:      "rt-thread-path" 
+        - source        : src/mem.c
+          virtual-dir   : rt_core
+          rootdir:      "rt-thread-path" 
+        - source        : src/memheap.c
+          virtual-dir   : rt_core
+          rootdir:      "rt-thread-path" 
+        - source        : src/mempool.c
+          virtual-dir   : rt_core
+          rootdir:      "rt-thread-path" 
+        - source        : src/module.c
+          virtual-dir   : rt_core
+          rootdir:      "rt-thread-path" 
+        - source        : src/object.c
+          virtual-dir   : rt_core
+          rootdir:      "rt-thread-path"
+        - source        : src/scheduler.c
+          virtual-dir   : rt_core
+          rootdir:      "rt-thread-path" 
+        - source        : src/slab.c
+          virtual-dir   : rt_core
+          rootdir:      "rt-thread-path" 
+        - source        : src/thread.c
+          virtual-dir   : rt_core
+          rootdir:      "rt-thread-path" 
+        - source        : src/timer.c
+          virtual-dir   : rt_core
+          rootdir:      "rt-thread-path" 
+

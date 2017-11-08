@@ -1,0 +1,8 @@
+__load__:
+  - rt_thread/rt_core.yml
+
+rt_core:
+  configuration:
+    section-type: component
+    meta_components:
+      - rt_core

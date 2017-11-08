@@ -1,0 +1,8 @@
+__load__:
+  - rt_thread/rt_drivers.yml
+
+rt_drivers:
+  configuration:
+    section-type: component
+    meta_components:
+      - rt_drivers

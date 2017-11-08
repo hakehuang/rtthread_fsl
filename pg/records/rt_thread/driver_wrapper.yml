@@ -1,0 +1,49 @@
+driver_wrapper:
+  configuration:
+    tools:
+      __common__:
+        config:
+          __common__:
+            cc_include:
+              - path: bsp/kinetis/driver_wrapper/inc
+                rootdir: "rt-thread-path"
+  modules:
+    uart_wrapper:
+      mode: post-process-app
+      name              : uart_wrapper
+      files:
+        - source        : bsp/kinetis/driver_wrapper/uart/drv_uart.c
+          virtual-dir   : uart_wrapper
+          rootdir:      "rt-thread-path" 
+        - source        : bsp/kinetis/driver_wrapper/inc/drv_uart.h
+          virtual-dir   : uart_wrapper
+          rootdir:      "rt-thread-path"
+        - source        : bsp/kinetis/driver_wrapper/uart/fsl_uart_irq_rt.c
+          virtual-dir   : uart_wrapper
+          rootdir:      "rt-thread-path"
+    lpuart_wrapper:
+      mode: post-process-app
+      name              : uart_wrapper
+      files:
+        - source        : bsp/kinetis/driver_wrapper/lpuart/drv_lpuart.c
+          virtual-dir   : uart_wrapper
+          rootdir:      "rt-thread-path" 
+        - source        : bsp/kinetis/driver_wrapper/inc/drv_lpuart.h
+          virtual-dir   : uart_wrapper
+          rootdir:      "rt-thread-path"
+        - source        : bsp/kinetis/driver_wrapper/lpuart/fsl_lpuart_irq_rt.c
+          virtual-dir   : uart_wrapper
+          rootdir:      "rt-thread-path"
+    lpsci_wrapper:
+      mode: post-process-app
+      name              : lpsci_wrapper
+      files:
+        - source        : bsp/kinetis/driver_wrapper/lpsci/drv_lpsci.c
+          virtual-dir   : uart_wrapper
+          rootdir:      "rt-thread-path" 
+        - source        : bsp/kinetis/driver_wrapper/inc/drv_lpsci.h
+          virtual-dir   : uart_wrapper
+          rootdir:      "rt-thread-path"
+        - source        : bsp/kinetis/driver_wrapper/lpsci/fsl_lpsci_irq_rt.c
+          virtual-dir   : uart_wrapper
+          rootdir:      "rt-thread-path"

@@ -1,0 +1,2497 @@
+---
+hello_world:
+  __add__:
+  - twrk64f120m
+  - MK64FN1M0xxx12
+  - fsl_uart
+  - fsl_gpio
+  - fsl_smc
+  - fsl_pit
+  - fsl_enet
+  - fsl_common
+  - fsl_flash
+  - finish
+  - rt_core
+  - rt_drivers
+  - arm
+  - cortex-m4
+  attribute: required
+  mode: post-process-app
+  outdir: hello_world
+  configuration:
+    tools:
+      iar:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            as_defines: {}
+            ld_flags: []
+            cc_include:
+            - path: hello_world
+              rootdir: app_path
+            cc_flags: []
+            as_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              TOOLCHAIN_IAR: 
+            as_defines: {}
+            ld_flags: []
+            cc_include:
+            - path: hello_world
+              rootdir: app_path
+            cc_flags: []
+            as_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      mdk:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_ARM_STD: 
+            as_defines: {}
+            ld_flags: []
+            cc_include:
+            - path: hello_world
+              rootdir: app_path
+            cc_flags: []
+            as_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              TOOLCHAIN_ARM_STD: 
+            as_defines: {}
+            ld_flags: []
+            cc_include:
+            - path: hello_world
+              rootdir: app_path
+            cc_flags: []
+            as_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      cmake:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            as_defines: {}
+            ld_flags: []
+            cc_include:
+            - path: hello_world
+              rootdir: app_path
+            cc_flags: []
+            as_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              TOOLCHAIN_GCC: 
+            as_defines: {}
+            ld_flags: []
+            cc_include:
+            - path: hello_world
+              rootdir: app_path
+            cc_flags: []
+            as_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+        group: cmake
+        load_to:
+          debug: {}
+          release: {}
+    section-type: application
+    section-depends: 
+  modules:
+    hello_world:
+      name: hello_world
+      files:
+      - path: hello_world/main.cpp
+        virtual-dir: hello_world
+        rootdir: app_path
+cortex-m4:
+  configuration:
+    section-type: component
+    meta_components:
+    - cortex-m4
+    tools:
+      iar:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            as_defines: {}
+            cc_include: []
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              TOOLCHAIN_IAR: 
+            cc_include: []
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      mdk:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_ARM_STD: 
+            as_defines: {}
+            cc_include: []
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              TOOLCHAIN_ARM_STD: 
+            cc_include: []
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      cmake:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            as_defines: {}
+            cc_include: []
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              TOOLCHAIN_GCC: 
+            cc_include: []
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        group: cmake
+        load_to:
+          debug: {}
+          release: {}
+  modules:
+    cortez_m4:
+      name: cortex_m4
+      files:
+      - source: libcpu/arm/cortex-m4/cpuport.c
+        virtual-dir: cortex_m4
+        rootdir: rt-thread-path
+  tools:
+    iar:
+      files:
+      - source: libcpu/arm/cortex-m4/context_iar.S
+        virtual-dir: context
+        rootdir: rt-thread-path
+    mdk:
+      files:
+      - source: libcpu/arm/cortex-m4/context_rvds.S
+        virtual-dir: context
+        rootdir: rt-thread-path
+    armgcc:
+      files:
+      - source: libcpu/arm/cortex-m4/context_gcc.S
+        virtual-dir: context
+        rootdir: rt-thread-path
+  mode: post-process-app
+  attribute: required
+arm:
+  configuration:
+    section-type: component
+    meta_components:
+    - driver_wrapper
+    tools:
+      iar:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            as_defines: {}
+            cc_include: []
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              TOOLCHAIN_IAR: 
+            cc_include: []
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      mdk:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_ARM_STD: 
+            as_defines: {}
+            cc_include: []
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              TOOLCHAIN_ARM_STD: 
+            cc_include: []
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      cmake:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            as_defines: {}
+            cc_include: []
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              TOOLCHAIN_GCC: 
+            cc_include: []
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        group: cmake
+        load_to:
+          debug: {}
+          release: {}
+  modules:
+    arm:
+      name: arm
+      files:
+      - source: libcpu/arm/common/backtrace.c
+        virtual-dir: arm
+        rootdir: rt-thread-path
+      - source: libcpu/arm/common/div0.c
+        virtual-dir: arm
+        rootdir: rt-thread-path
+      - source: libcpu/arm/common/showmem.c
+        virtual-dir: arm
+        rootdir: rt-thread-path
+  mode: post-process-app
+  attribute: required
+rt_drivers:
+  configuration:
+    section-type: component
+    meta_components:
+    - rt_drivers
+    tools:
+      iar:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            as_defines: {}
+            cc_include:
+            - path: components/drivers/include/drivers
+              rootdir: rt-thread-path
+            - path: components/drivers/include/
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              TOOLCHAIN_IAR: 
+            cc_include:
+            - path: components/drivers/include/drivers
+              rootdir: rt-thread-path
+            - path: components/drivers/include/
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      mdk:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_ARM_STD: 
+            as_defines: {}
+            cc_include:
+            - path: components/drivers/include/drivers
+              rootdir: rt-thread-path
+            - path: components/drivers/include/
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              TOOLCHAIN_ARM_STD: 
+            cc_include:
+            - path: components/drivers/include/drivers
+              rootdir: rt-thread-path
+            - path: components/drivers/include/
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      cmake:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            as_defines: {}
+            cc_include:
+            - path: components/drivers/include/drivers
+              rootdir: rt-thread-path
+            - path: components/drivers/include/
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              TOOLCHAIN_GCC: 
+            cc_include:
+            - path: components/drivers/include/drivers
+              rootdir: rt-thread-path
+            - path: components/drivers/include/
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        group: cmake
+        load_to:
+          debug: {}
+          release: {}
+  modules: {}
+  mode: post-process-app
+  attribute: required
+rt_core:
+  configuration:
+    section-type: component
+    meta_components:
+    - rt_core
+    tools:
+      iar:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            as_defines: {}
+            cc_include:
+            - path: include
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              TOOLCHAIN_IAR: 
+            cc_include:
+            - path: include
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      mdk:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_ARM_STD: 
+            as_defines: {}
+            cc_include:
+            - path: include
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              TOOLCHAIN_ARM_STD: 
+            cc_include:
+            - path: include
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      cmake:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            as_defines: {}
+            cc_include:
+            - path: include
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              TOOLCHAIN_GCC: 
+            cc_include:
+            - path: include
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        group: cmake
+        load_to:
+          debug: {}
+          release: {}
+  modules: {}
+  mode: post-process-app
+  attribute: required
+finish:
+  configuration:
+    section-type: component
+    meta_components:
+    - finish
+    tools:
+      iar:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            as_defines: {}
+            cc_include:
+            - path: components/finsh
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              TOOLCHAIN_IAR: 
+            cc_include:
+            - path: components/finsh
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      mdk:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_ARM_STD: 
+            as_defines: {}
+            cc_include:
+            - path: components/finsh
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              TOOLCHAIN_ARM_STD: 
+            cc_include:
+            - path: components/finsh
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      cmake:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            as_defines: {}
+            cc_include:
+            - path: components/finsh
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              TOOLCHAIN_GCC: 
+            cc_include:
+            - path: components/finsh
+              rootdir: rt-thread-path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        group: cmake
+        load_to:
+          debug: {}
+          release: {}
+  modules: {}
+  mode: post-process-app
+  attribute: required
+fsl_uart:
+  configuration:
+    section-type: component
+    meta_components:
+    - fsl_uart
+    tools:
+      iar:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              TOOLCHAIN_IAR: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      mdk:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_ARM_STD: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              TOOLCHAIN_ARM_STD: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      cmake:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              TOOLCHAIN_GCC: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        group: cmake
+        load_to:
+          debug: {}
+          release: {}
+  modules:
+    fsl_uart:
+      virtual-dir: drivers
+      files:
+      - path: devices/MK64F12/drivers/fsl_uart.c
+        rootdir: fsl_sdk_path
+      - path: devices/MK64F12/drivers/fsl_uart.h
+        rootdir: fsl_sdk_path
+  mode: post-process-app
+  attribute: required
+fsl_smc:
+  configuration:
+    section-type: component
+    meta_components:
+    - fsl_smc
+    tools:
+      iar:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              TOOLCHAIN_IAR: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      mdk:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_ARM_STD: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              TOOLCHAIN_ARM_STD: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      cmake:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              TOOLCHAIN_GCC: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        group: cmake
+        load_to:
+          debug: {}
+          release: {}
+  modules:
+    fsl_smc:
+      virtual-dir: drivers
+      files:
+      - path: devices/MK64F12/drivers/fsl_smc.c
+        rootdir: fsl_sdk_path
+      - path: devices/MK64F12/drivers/fsl_smc.h
+        rootdir: fsl_sdk_path
+  mode: post-process-app
+  attribute: required
+fsl_pit:
+  configuration:
+    section-type: component
+    meta_components:
+    - fsl_pit
+    tools:
+      iar:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              TOOLCHAIN_IAR: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      mdk:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_ARM_STD: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              TOOLCHAIN_ARM_STD: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      cmake:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              TOOLCHAIN_GCC: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        group: cmake
+        load_to:
+          debug: {}
+          release: {}
+  modules:
+    fsl_pit:
+      virtual-dir: drivers
+      files:
+      - path: devices/MK64F12/drivers/fsl_pit.c
+        rootdir: fsl_sdk_path
+      - path: devices/MK64F12/drivers/fsl_pit.h
+        rootdir: fsl_sdk_path
+  mode: post-process-app
+  attribute: required
+fsl_gpio:
+  configuration:
+    section-type: component
+    meta_components:
+    - fsl_gpio
+    tools:
+      iar:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              TOOLCHAIN_IAR: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      mdk:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_ARM_STD: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              TOOLCHAIN_ARM_STD: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      cmake:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              TOOLCHAIN_GCC: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        group: cmake
+        load_to:
+          debug: {}
+          release: {}
+  modules:
+    fsl_gpio:
+      virtual-dir: drivers
+      files:
+      - path: devices/MK64F12/drivers/fsl_gpio.c
+        rootdir: fsl_sdk_path
+      - path: devices/MK64F12/drivers/fsl_gpio.h
+        rootdir: fsl_sdk_path
+  mode: post-process-app
+  attribute: required
+fsl_flash:
+  configuration:
+    section-type: component
+    meta_components:
+    - fsl_flash
+    tools:
+      iar:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              TOOLCHAIN_IAR: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      mdk:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_ARM_STD: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              TOOLCHAIN_ARM_STD: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      cmake:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              TOOLCHAIN_GCC: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        group: cmake
+        load_to:
+          debug: {}
+          release: {}
+  modules:
+    fsl_flash:
+      virtual-dir: drivers
+      files:
+      - path: devices/MK64F12/drivers/fsl_flash.c
+        rootdir: fsl_sdk_path
+      - path: devices/MK64F12/drivers/fsl_flash.h
+        rootdir: fsl_sdk_path
+  mode: post-process-app
+  attribute: required
+fsl_enet:
+  configuration:
+    section-type: component
+    meta_components:
+    - fsl_enet
+    tools:
+      iar:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              TOOLCHAIN_IAR: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      mdk:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_ARM_STD: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              TOOLCHAIN_ARM_STD: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      cmake:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              TOOLCHAIN_GCC: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        group: cmake
+        load_to:
+          debug: {}
+          release: {}
+  modules:
+    fsl_enet:
+      virtual-dir: drivers
+      files:
+      - path: devices/MK64F12/drivers/fsl_enet.c
+        rootdir: fsl_sdk_path
+      - path: devices/MK64F12/drivers/fsl_enet.h
+        rootdir: fsl_sdk_path
+  mode: post-process-app
+  attribute: required
+fsl_common:
+  configuration:
+    section-type: component
+    meta_components:
+    - fsl_common
+    tools:
+      iar:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              TOOLCHAIN_IAR: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      mdk:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_ARM_STD: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              TOOLCHAIN_ARM_STD: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      cmake:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            as_defines: {}
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              TOOLCHAIN_GCC: 
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        group: cmake
+        load_to:
+          debug: {}
+          release: {}
+  modules:
+    fsl_common:
+      virtual-dir: drivers
+      files:
+      - path: devices/MK64F12/drivers/fsl_common.c
+        rootdir: fsl_sdk_path
+      - path: devices/MK64F12/drivers/fsl_common.h
+        rootdir: fsl_sdk_path
+  mode: post-process-app
+  attribute: required
+MK64FN1M0xxx12:
+  configuration:
+    section-type: component
+    meta_components:
+    - MK64FN1M0xxx12
+    tools:
+      iar:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              CPU_MK64FN1M0VMD12: 
+              TOOLCHAIN_IAR: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            as_defines: {}
+            as_flags:
+            - "--cpu Cortex-M4"
+            - "--fpu=vfpv4_sp_d16"
+            cc_flags:
+            - "--cpu=Cortex-M4"
+            - "--fpu=vfpv4_sp_d16"
+            cxx_flags:
+            - "--cpu=Cortex-M4"
+            - "--fpu=vfpv4_sp_d16"
+            cp_defines:
+              MK64FN1M0xxx12: Freescale MK64FN1M0xxx12
+            cc_include:
+            - path: devices/MK64F12/
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/
+              rootdir: fsl_sdk_path
+            ld_flags: []
+            as_include: []
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              CPU_MK64FN1M0VMD12: 
+              TOOLCHAIN_IAR: 
+            as_flags:
+            - "--cpu Cortex-M4"
+            - "--fpu=vfpv4_sp_d16"
+            cc_flags:
+            - "--cpu=Cortex-M4"
+            - "--fpu=vfpv4_sp_d16"
+            cxx_flags:
+            - "--cpu=Cortex-M4"
+            - "--fpu=vfpv4_sp_d16"
+            cp_defines:
+              MK64FN1M0xxx12: Freescale MK64FN1M0xxx12
+            cxx_defines:
+              TOOLCHAIN_IAR: 
+            cc_include:
+            - path: devices/MK64F12/
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/
+              rootdir: fsl_sdk_path
+            ld_flags: []
+            as_defines: {}
+            as_include: []
+        load-to:
+          debug:
+            target: intflash
+            identifier: Debug
+            config: debug
+            linker-file: devices/MK64F12/iar/MK64FN1M0xxx12_flash.icf
+            rootdir: fsl_sdk_path
+          release:
+            target: intflash
+            identifier: Release
+            config: release
+            linker-file: devices/MK64F12/iar/MK64FN1M0xxx12_flash.icf
+            rootdir: fsl_sdk_path
+        load_to:
+          debug: {}
+          release: {}
+      mdk:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              CPU_MK64FN1M0VMD12: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_ARM_STD: 
+            as_defines: {}
+            as_flags:
+            - "--cpu Cortex-M4.fp"
+            cc_flags:
+            - "--cpu Cortex-M4.fp"
+            - "--library_type=standardlib"
+            - "--c99"
+            - "--diag_suppress=1296,186"
+            - "--library_interface=armcc"
+            cxx_flags:
+            - "--cpu Cortex-M4.fp"
+            - "--library_type=standardlib"
+            - "--c99"
+            - "--diag_suppress=1296,186"
+            - "--library_interface=armcc"
+            ld_flags:
+            - "--cpu Cortex-M4.fp"
+            cp_defines:
+              MK64FN1M0xxx12: Freescale
+            cc_include:
+            - path: devices/MK64F12/
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/
+              rootdir: fsl_sdk_path
+            as_include: []
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              CPU_MK64FN1M0VMD12: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+            as_flags:
+            - "--cpu Cortex-M4.fp"
+            cc_flags:
+            - "--cpu Cortex-M4.fp"
+            - "--library_type=standardlib"
+            - "--c99"
+            - "--diag_suppress=1296,186"
+            - "--library_interface=armcc"
+            cxx_flags:
+            - "--cpu Cortex-M4.fp"
+            - "--library_type=standardlib"
+            - "--c99"
+            - "--diag_suppress=1296,186"
+            - "--library_interface=armcc"
+            ld_flags:
+            - "--cpu Cortex-M4.fp"
+            cp_defines:
+              MK64FN1M0xxx12: Freescale
+            cxx_defines:
+              TOOLCHAIN_ARM_STD: 
+            cc_include:
+            - path: devices/MK64F12/
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/
+              rootdir: fsl_sdk_path
+            as_defines: {}
+            as_include: []
+        load-to:
+          debug:
+            target: intflash
+            identifier: Debug
+            config: debug
+            linker-file: devices/MK64F12/arm/MK64FN1M0xxx12_flash.sct
+            rootdir: fsl_sdk_path
+          release:
+            target: intflash
+            identifier: Release
+            config: release
+            linker-file: devices/MK64F12/arm/MK64FN1M0xxx12_flash.sct
+            rootdir: fsl_sdk_path
+        load_to:
+          debug: {}
+          release: {}
+      cmake:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              CPU_MK64FN1M0VMD12: 
+              TOOLCHAIN_GCC: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            as_defines: {}
+            as_flags:
+            - "-mcpu=cortex-m4"
+            - "-mfloat-abi=hard"
+            - "-mfpu=fpv4-sp-d16"
+            cc_flags:
+            - "-mcpu=cortex-m4"
+            - "-mfloat-abi=hard"
+            - "-mfpu=fpv4-sp-d16"
+            - "-mthumb"
+            cxx_flags:
+            - "-mcpu=cortex-m4"
+            - "-mfloat-abi=hard"
+            - "-mfpu=fpv4-sp-d16"
+            - "-mthumb"
+            - "-MMD"
+            - "-MP"
+            ld_flags:
+            - "-mcpu=cortex-m4"
+            - "-mfloat-abi=hard"
+            - "-mfpu=fpv4-sp-d16"
+            cp_defines:
+              MK64FN1M0xxx12: Freescale Semiconductor
+            cc_include:
+            - path: devices/MK64F12/
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/
+              rootdir: fsl_sdk_path
+            as_include: []
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              CPU_MK64FN1M0VMD12: 
+              TOOLCHAIN_GCC: 
+            as_flags:
+            - "-mcpu=cortex-m4"
+            - "-mfloat-abi=hard"
+            - "-mfpu=fpv4-sp-d16"
+            cc_flags:
+            - "-mcpu=cortex-m4"
+            - "-mfloat-abi=hard"
+            - "-mfpu=fpv4-sp-d16"
+            - "-mthumb"
+            cxx_flags:
+            - "-mcpu=cortex-m4"
+            - "-mfloat-abi=hard"
+            - "-mfpu=fpv4-sp-d16"
+            - "-mthumb"
+            - "-MMD"
+            - "-MP"
+            ld_flags:
+            - "-mcpu=cortex-m4"
+            - "-mfloat-abi=hard"
+            - "-mfpu=fpv4-sp-d16"
+            cp_defines:
+              MK64FN1M0xxx12: Freescale Semiconductor
+            cxx_defines:
+              TOOLCHAIN_GCC: 
+            cc_include:
+            - path: devices/MK64F12/
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/
+              rootdir: fsl_sdk_path
+            as_defines: {}
+            as_include: []
+        load-to:
+          debug:
+            target: 128kb-ram
+            identifier: Debug
+            config: debug
+            linker-file: devices/MK64F12/gcc/MK64FN1M0xxx12_flash.ld
+            rootdir: fsl_sdk_path
+          release:
+            target: 128kb-ram
+            identifier: Release
+            config: release
+            linker-file: devices/MK64F12/gcc/MK64FN1M0xxx12_flash.ld
+            rootdir: fsl_sdk_path
+        group: cmake
+        load_to:
+          debug: {}
+          release: {}
+  tools:
+    iar:
+      files:
+      - path: devices/MK64F12/iar/startup_MK64F12.s
+        virtual-dir: startup
+        rootdir: fsl_sdk_path
+    mdk:
+      files:
+      - path: devices/MK64F12/arm/startup_MK64F12.s
+        virtual-dir: startup
+        rootdir: fsl_sdk_path
+    cmake:
+      files:
+      - path: devices/MK64F12/gcc/startup_MK64F12.S
+        virtual-dir: startup
+        rootdir: fsl_sdk_path
+  modules:
+    device:
+      name: device
+      files:
+      - path: devices/MK64F12/MK64F12.h
+        virtual-dir: device
+        rootdir: fsl_sdk_path
+      - path: devices/MK64F12/MK64F12_features.h
+        virtual-dir: device
+        rootdir: fsl_sdk_path
+      - path: devices/MK64F12/fsl_device_registers.h
+        virtual-dir: device
+        rootdir: fsl_sdk_path
+      - path: devices/MK64F12/system_MK64F12.h
+        virtual-dir: device
+        rootdir: fsl_sdk_path
+      - path: devices/MK64F12/system_MK64F12.c
+        virtual-dir: device
+        rootdir: fsl_sdk_path
+  mode: post-process-app
+  attribute: required
+twrk64f120m:
+  configuration:
+    section-type: component
+    meta_components:
+    - twrk64f120m
+    report-name: twrk64f120m
+    board: twrk64f120m
+    tools:
+      iar:
+        project-templates:
+        - templates/iar/general.eww
+        - templates/iar/general.ewp
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+              TWR_K64F120M: 
+              TARGET_K64F: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_IAR: 
+            as_defines: {}
+            cc_include:
+            - path: boards/twrk64f120m
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_IAR: 
+              TWR_K64F120M: 
+              TARGET_K64F: 
+            cxx_defines:
+              TOOLCHAIN_IAR: 
+            cc_include:
+            - path: boards/twrk64f120m
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      mdk:
+        project-templates:
+        - templates/mdk/project_mpw.xsd
+        - templates/mdk/k64f120m.uvprojx
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+              TWR_K64F120M: 
+              TARGET_K64F: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_ARM_STD: 
+            as_defines: {}
+            cc_include:
+            - path: boards/twrk64f120m
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              KEIL: 
+              TOOLCHAIN_ARM_STD: 
+              TWR_K64F120M: 
+              TARGET_K64F: 
+            cxx_defines:
+              TOOLCHAIN_ARM_STD: 
+            cc_include:
+            - path: boards/twrk64f120m
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        load_to:
+          debug: {}
+          release: {}
+      cmake:
+        config:
+          debug:
+            identifier: Debug
+            target: debug
+            cc_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+              TWR_K64F120M: 
+              TARGET_K64F: 
+            cxx_defines:
+              DEBUG: 
+              TOOLCHAIN_GCC: 
+            as_defines: {}
+            cc_include:
+            - path: boards/twrk64f120m
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_include: []
+            cp_defines: {}
+          release:
+            identifier: Release
+            target: release
+            cc_defines:
+              NDEBUG: 
+              TOOLCHAIN_GCC: 
+              TWR_K64F120M: 
+              TARGET_K64F: 
+            cxx_defines:
+              TOOLCHAIN_GCC: 
+            cc_include:
+            - path: boards/twrk64f120m
+              rootdir: fsl_sdk_path
+            cc_flags: []
+            as_flags: []
+            ld_flags: []
+            cxx_flags: []
+            as_defines: {}
+            as_include: []
+            cp_defines: {}
+        group: cmake
+        load_to:
+          debug: {}
+          release: {}
+  document:
+    board: twrk64f120m
+  modules:
+    device:
+      name: boards
+      files:
+      - path: boards/twrk64f120m/clock_config.c
+        virtual-dir: device
+        rootdir: fsl_sdk_path
+      - path: boards/twrk64f120m/clock_config.h
+        virtual-dir: device
+        rootdir: fsl_sdk_path
+      - path: boards/twrk64f120m/pin_mux.c
+        virtual-dir: device
+        rootdir: fsl_sdk_path
+      - path: boards/twrk64f120m/pin_mux.h
+        virtual-dir: device
+        rootdir: fsl_sdk_path
+  mode: post-process-app
+  attribute: required

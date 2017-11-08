@@ -1,0 +1,8 @@
+---
+__load__:
+- targets/nxp/sdk/fsl_cmt.yml
+fsl_cmt:
+  configuration:
+    section-type: component
+    meta_components:
+    - fsl_cmt

@@ -1,0 +1,30 @@
+__load__:
+  - applications/apps.yml
+  - component/nxp/boards/twrk64f120m.yml
+  - component/nxp/sdk/MK64FN1M0xxx12_sdk2.yml
+  - component/rt_thread/finish.yml
+  - component/rt_thread/rt_core.yml
+  - component/rt_thread/rt_drivers.yml
+  - component/rt_thread/libcpu_arm.yml
+  - component/rt_thread/libcpu_cortex-m4.yml
+
+__hierarchy__:
+  mode: post-process-app
+
+hello_world:
+  __add__:
+    - twrk64f120m
+    - MK64FN1M0xxx12
+    - fsl_uart
+    - fsl_gpio
+    - fsl_smc
+    - fsl_pit
+    - fsl_enet
+    - fsl_common
+    - fsl_flash
+    - finish
+    - rt_core
+    - rt_drivers
+    - arm
+    - cortex-m4
+  attribute: 'required'

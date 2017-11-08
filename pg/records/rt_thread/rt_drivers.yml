@@ -1,0 +1,44 @@
+rt_drivers:
+  configuration:
+    tools:
+      __common__:
+        config:
+          __common__:
+            cc_include:
+              - path: components/drivers/include/drivers
+                rootdir: "rt-thread-path"
+              - path: components/drivers/include/
+                rootdir: "rt-thread-path"
+  modules:
+    serial:
+      mode: post-process-app
+      name              : serial
+      files:
+        - source        : components/drivers/serial/serial.c
+          virtual-dir   : serial
+          rootdir:      "rt-thread-path"
+        - source        : components/drivers/include/drivers/serial.h
+          virtual-dir   : serial
+          rootdir:      "rt-thread-path"
+    general:
+      mode: post-process-app
+      name              : general
+      files:
+        - source        : components/drivers/src/completion.c
+          virtual-dir   : general
+          rootdir:      "rt-thread-path"
+        - source        : components/drivers/src/pipe.c
+          virtual-dir   : general
+          rootdir:      "rt-thread-path"
+        - source        : components/drivers/src/portal.c
+          virtual-dir   : general
+          rootdir:      "rt-thread-path"
+        - source        : components/drivers/src/ringbuffer.c
+          virtual-dir   : general
+          rootdir:      "rt-thread-path"
+        - source        : components/drivers/src/workqueue.c
+          virtual-dir   : general
+          rootdir:      "rt-thread-path"
+        - source        : components/drivers/src/dataqueue.c
+          virtual-dir   : general
+          rootdir:      "rt-thread-path"

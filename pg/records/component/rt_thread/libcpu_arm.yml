@@ -1,0 +1,8 @@
+__load__:
+  - rt_thread/libcpu/arm.yml
+
+arm:
+  configuration:
+    section-type: component
+    meta_components:
+      - driver_wrapper

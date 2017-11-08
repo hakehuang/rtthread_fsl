@@ -1,0 +1,170 @@
+__hierarchy__:
+  configuration:
+    tools:
+      __common__:
+        config:
+          __common__:
+            cc_include:
+            - path: devices/MK64F12/
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/
+              rootdir: fsl_sdk_path
+  tools:
+    iar:
+      files:
+        - path        : devices/MK64F12/iar/startup_MK64F12.s
+          virtual-dir   : startup
+          rootdir       : "fsl_sdk_path"
+    mdk:
+      files:
+        - path        : devices/MK64F12/arm/startup_MK64F12.s
+          virtual-dir   : startup
+          rootdir       : "fsl_sdk_path"
+    cmake:
+      files:
+        - path        : devices/MK64F12/gcc/startup_MK64F12.S
+          virtual-dir   : startup
+          rootdir       : "fsl_sdk_path"
+  modules:
+    device:
+      name: device
+      files:
+        - path        : devices/MK64F12/MK64F12.h
+          virtual-dir   : device
+          rootdir       : "fsl_sdk_path"
+        - path        : devices/MK64F12/MK64F12_features.h
+          virtual-dir   : device
+          rootdir       : "fsl_sdk_path"
+        - path        : devices/MK64F12/fsl_device_registers.h
+          virtual-dir   : device
+          rootdir       : "fsl_sdk_path"
+        - path        : devices/MK64F12/system_MK64F12.h
+          virtual-dir   : device
+          rootdir       : "fsl_sdk_path"
+        - path        : devices/MK64F12/system_MK64F12.c
+          virtual-dir   : device
+          rootdir       : "fsl_sdk_path"
+
+MK64FN1M0xxx12:
+  configuration:
+    tools:
+###
+### Iar settings
+###
+      iar:
+        config:
+          __common__:
+            as_flags:
+              - --cpu Cortex-M4
+              - --fpu=vfpv4_sp_d16
+            cc_flags:
+              - --cpu=Cortex-M4
+              - --fpu=vfpv4_sp_d16
+            cxx_flags:
+              - --cpu=Cortex-M4
+              - --fpu=vfpv4_sp_d16
+            cc_defines:
+              CPU_MK64FN1M0VMD12:
+            cp_defines:
+              MK64FN1M0xxx12: "Freescale MK64FN1M0xxx12"
+
+        load-to:
+          debug:
+            target      : intflash
+            identifier  : Debug
+            config      : debug
+            linker-file : devices/MK64F12/iar/MK64FN1M0xxx12_flash.icf
+            rootdir     : "fsl_sdk_path"
+          release:
+            target      : intflash
+            identifier  : Release
+            config      : release
+            linker-file : devices/MK64F12/iar/MK64FN1M0xxx12_flash.icf
+            rootdir     : "fsl_sdk_path"
+
+###
+### Keil settings
+###
+      mdk:
+        config:
+          __common__:
+            as_flags:
+              - --cpu Cortex-M4.fp
+            cc_flags:
+              - --cpu Cortex-M4.fp
+              - --library_type=standardlib
+              - --c99 
+              - --diag_suppress=1296,186
+              - --library_interface=armcc
+            cxx_flags:
+              - --cpu Cortex-M4.fp
+              - --library_type=standardlib
+              - --c99 
+              - --diag_suppress=1296,186
+              - --library_interface=armcc
+            ld_flags:
+              - --cpu Cortex-M4.fp
+            cc_defines:
+              CPU_MK64FN1M0VMD12:
+            cp_defines:
+              MK64FN1M0xxx12: "Freescale"
+
+        load-to:
+          debug:
+            target      : intflash
+            identifier  : Debug
+            config      : debug
+            linker-file : devices/MK64F12/arm/MK64FN1M0xxx12_flash.sct
+            rootdir     : "fsl_sdk_path"
+          release:
+            target      : intflash
+            identifier  : Release
+            config      : release
+            linker-file : devices/MK64F12/arm/MK64FN1M0xxx12_flash.sct
+            rootdir     : "fsl_sdk_path"
+
+###
+### CMake files
+###
+      cmake:
+        config:
+          __common__:
+            as_flags:
+              - -mcpu=cortex-m4
+              - -mfloat-abi=hard
+              - -mfpu=fpv4-sp-d16
+            cc_flags:
+              - -mcpu=cortex-m4
+              - -mfloat-abi=hard 
+              - -mfpu=fpv4-sp-d16
+              - -mthumb
+            cxx_flags:
+              - -mcpu=cortex-m4
+              - -mfloat-abi=hard
+              - -mfpu=fpv4-sp-d16
+              - -mthumb
+              - -MMD
+              - -MP
+            ld_flags:
+              - -mcpu=cortex-m4
+              - -mfloat-abi=hard
+              - -mfpu=fpv4-sp-d16
+            cc_defines:
+              CPU_MK64FN1M0VMD12:
+            cp_defines:
+              MK64FN1M0xxx12: "Freescale Semiconductor"
+        load-to:
+          debug:
+            target      : 128kb-ram
+            identifier  : Debug
+            config      : debug
+            linker-file : devices/MK64F12/gcc/MK64FN1M0xxx12_flash.ld
+            rootdir     : "fsl_sdk_path"
+          release:
+            target      : 128kb-ram
+            identifier  : Release
+            config      : release
+            linker-file : devices/MK64F12/gcc/MK64FN1M0xxx12_flash.ld
+            rootdir     : "fsl_sdk_path"
+

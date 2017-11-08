@@ -1,0 +1,9 @@
+ _buf << %Q`__load__:
+  - targets/nxp/sdk/#{escape((@COMP).to_s)}.yml
+
+#{escape((@COMP).to_s)}:
+  configuration:
+    section-type: component
+    meta_components:
+      - #{escape((@COMP).to_s)}
+\n`

@@ -1,0 +1,37 @@
+
+cortex-m4:
+  configuration:
+    tools:
+      __common__:
+        config:
+          __common__:
+            cc_defines:
+            cc_include:
+  modules:
+    cortez_m4:
+      name              : cortex_m4
+      files:
+        - source        : libcpu/arm/cortex-m4/cpuport.c
+          virtual-dir   : cortex_m4
+          rootdir       : "rt-thread-path"
+  tools:
+    iar:
+      files:
+        - source        : libcpu/arm/cortex-m4/context_iar.S
+          virtual-dir   : context
+          rootdir       : "rt-thread-path"
+    mdk:
+      files:
+        - source        : libcpu/arm/cortex-m4/context_rvds.S
+          virtual-dir   : context
+          rootdir       : "rt-thread-path"
+    armgcc:
+      files:
+        - source        : libcpu/arm/cortex-m4/context_gcc.S
+          virtual-dir   : context
+          rootdir       : "rt-thread-path"
+
+
+
+
+

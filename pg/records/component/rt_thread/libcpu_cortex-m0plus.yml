@@ -1,0 +1,8 @@
+__load__:
+  - rt_thread/libcpu/cortex-m0plus.yml
+
+cortex-m0plus:
+  configuration:
+    section-type: component
+    meta_components:
+      - cortex-m0plus

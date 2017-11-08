@@ -1,0 +1,8 @@
+__load__:
+  - rt_thread/finish.yml
+
+finish:
+  configuration:
+    section-type: component
+    meta_components:
+      - finish

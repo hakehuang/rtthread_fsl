@@ -1,0 +1,8 @@
+__load__:
+  - targets/nxp/boards/twrk64f120m.yml
+
+twrk64f120m:
+  configuration:
+    section-type: component
+    meta_components:
+      - twrk64f120m

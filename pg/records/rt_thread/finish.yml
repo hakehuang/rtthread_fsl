@@ -1,0 +1,98 @@
+finish:
+  configuration:
+    tools:
+      __common__:
+        config:
+          __common__:
+            cc_include:
+              - path: components/finsh
+                rootdir: "rt-thread-path"
+  modules:
+    finsh:
+      mode: post-process-app
+      name              : finsh
+      files:
+        - source        : components/finsh/cmd.c
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh.h
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_compiler.c
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_error.c
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_error.h
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_heap.c
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_heap.h
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_init.c
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_node.c
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_node.h
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_ops.c
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path"
+        - source        : components/finsh/finsh_ops.h
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_ops.c
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_ops.h
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_parser.c
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_parser.h
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_token.c
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path"
+        - source        : components/finsh/finsh_token.h
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_var.c
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_var.h
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_vm.c
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/finsh_vm.h
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/msh.c
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/msh.h
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/msh_cmd.c
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/shell.c
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path" 
+        - source        : components/finsh/shell.h
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path"
+        - source        : components/finsh/symbol.c
+          virtual-dir   : finsh
+          rootdir:      "rt-thread-path"

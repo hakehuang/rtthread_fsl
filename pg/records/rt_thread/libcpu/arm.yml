@@ -1,0 +1,24 @@
+arm:
+  configuration:
+    tools:
+      __common__:
+        config:
+          __common__:
+            cc_defines:
+            cc_include:
+  modules:
+    arm:
+      name              : arm
+      files:
+        - source        : libcpu/arm/common/backtrace.c
+          virtual-dir   : arm
+          rootdir       : "rt-thread-path"
+        - source        : libcpu/arm/common/div0.c
+          virtual-dir   : arm
+          rootdir       : "rt-thread-path"
+#        - source        : libcpu/arm/common/divsi3.S
+#          virtual-dir   : arm
+#          rootdir       : "rt-thread-path"
+        - source        : libcpu/arm/common/showmem.c
+          virtual-dir   : arm
+          rootdir       : "rt-thread-path"

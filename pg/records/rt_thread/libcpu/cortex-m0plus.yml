@@ -1,0 +1,37 @@
+
+cortex_m0:
+  configuration:
+    tools:
+      __common__:
+        config:
+          __common__:
+            cc_defines:
+            cc_include:
+  modules:
+    cortex_m0:
+      name              : cortex_m0
+      files:
+        - source        : libcpu/arm/cortex-m0/cpuport.c
+          virtual-dir   : cortex_m0
+          rootdir       : "rt-thread-path"
+  tools:
+    iar:
+      files:
+        - source        : libcpu/arm/cortex-m0/context_iar.S
+          virtual-dir   : context
+          rootdir       : "rt-thread-path"
+    mdk:
+      files:
+        - source        : libcpu/arm/cortex-m0/context_rvds.S
+          virtual-dir   : context
+          rootdir       : "rt-thread-path"
+    armgcc:
+      files:
+        - source        : libcpu/arm/cortex-m0/context_gcc.S
+          virtual-dir   : context
+          rootdir       : "rt-thread-path"
+
+
+
+
+

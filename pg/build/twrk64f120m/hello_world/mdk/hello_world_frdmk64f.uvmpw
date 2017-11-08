@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProjectWorkspace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_mpw.xsd">
+  <SchemaVersion>2.1</SchemaVersion>
+  <Header>### uVision Project, (C) Keil Software</Header>
+  <WorkspaceName>WorkSpace</WorkspaceName>
+  <!-- Multiple instances of project allowed here -->
+  
+  <!-- Multiple instances of Sle7 allowed here -->
+  
+<project>
+    <PathAndName>hello_world_frdmk64f.uvprojx</PathAndName>
+    <!-- Multiple instances of NodeIsActive allowed here -->
+    <NodeIsActive>0</NodeIsActive>
+    <!-- Multiple instances of NodeIsExpanded allowed here -->
+    <NodeIsExpanded>0</NodeIsExpanded>
+    <!-- Multiple instances of NodeIsCheckedInBatchBuild allowed here -->
+    <NodeIsCheckedInBatchBuild>switcher</NodeIsCheckedInBatchBuild>
+  </project></ProjectWorkspace>

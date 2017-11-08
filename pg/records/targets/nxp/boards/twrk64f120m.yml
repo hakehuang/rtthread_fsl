@@ -1,0 +1,43 @@
+
+twrk64f120m:
+  document:
+    board: twrk64f120m
+  configuration:
+    report-name         : twrk64f120m
+    board               : twrk64f120m
+    tools:
+      __common__:
+        config:
+          __common__:
+            cc_include:
+            - path: boards/twrk64f120m
+              rootdir: fsl_sdk_path
+            cc_defines:
+              TWR_K64F120M:
+              TARGET_K64F:
+      iar:
+        project-templates:
+          - templates/iar/general.eww
+          - templates/iar/general.ewp
+      mdk:
+        project-templates:
+          - templates/mdk/project_mpw.xsd
+          - templates/mdk/k64f120m.uvprojx
+  modules:
+    device:
+      name: boards
+      files:
+        - path        : boards/twrk64f120m/clock_config.c
+          virtual-dir   : device
+          rootdir       : "fsl_sdk_path"
+        - path        : boards/twrk64f120m/clock_config.h
+          virtual-dir   : device
+          rootdir       : "fsl_sdk_path"
+        - path        : boards/twrk64f120m/pin_mux.c
+          virtual-dir   : device
+          rootdir       : "fsl_sdk_path"
+        - path        : boards/twrk64f120m/pin_mux.h
+          virtual-dir   : device
+          rootdir       : "fsl_sdk_path"
+
+

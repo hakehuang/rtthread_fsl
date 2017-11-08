@@ -1,0 +1,23 @@
+ _buf << %Q`#{escape((@COMP).to_s)}:
+  configuration:
+    tools:
+      __common__:
+        config:
+          __common__:
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+  modules:
+    #{escape((@COMP).to_s)}:
+      virtual-dir: drivers
+      files:
+      - path: devices/MK64F12/drivers/#{escape((@COMP).to_s)}.c
+        rootdir: fsl_sdk_path
+      - path: devices/MK64F12/drivers/#{escape((@COMP).to_s)}.h
+        rootdir: fsl_sdk_path
+
+
+\n`

@@ -1,0 +1,8 @@
+---
+__load__:
+- targets/nxp/sdk/fsl_sim.yml
+fsl_sim:
+  configuration:
+    section-type: component
+    meta_components:
+    - fsl_sim

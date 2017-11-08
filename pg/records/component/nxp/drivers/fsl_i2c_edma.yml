@@ -1,0 +1,8 @@
+---
+__load__:
+- targets/nxp/sdk/fsl_i2c_edma.yml
+fsl_i2c_edma:
+  configuration:
+    section-type: component
+    meta_components:
+    - fsl_i2c_edma

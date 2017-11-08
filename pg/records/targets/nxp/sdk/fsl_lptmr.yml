@@ -1,0 +1,21 @@
+---
+fsl_lptmr:
+  configuration:
+    tools:
+      __common__:
+        config:
+          __common__:
+            cc_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+            cxx_include:
+            - path: devices/MK64F12/drivers
+              rootdir: fsl_sdk_path
+  modules:
+    fsl_lptmr:
+      virtual-dir: drivers
+      files:
+      - path: devices/MK64F12/drivers/fsl_lptmr.c
+        rootdir: fsl_sdk_path
+      - path: devices/MK64F12/drivers/fsl_lptmr.h
+        rootdir: fsl_sdk_path
