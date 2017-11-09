@@ -33,14 +33,13 @@ SET(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -mcpu=cortex-m4")
 SET(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -mfloat-abi=hard")
 SET(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -mfpu=fpv4-sp-d16")
 SET(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -mthumb")
-include_directories($ProjDirPath$/../../../../batches/hello_world)
+include_directories($ProjDirPath$/../../../../pg/batches/hello_world)
 include_directories($ProjDirPath$/../../../../bsp/kinetis/SDK_2.2_TWR-K64F120M/boards/twrk64f120m)
 include_directories($ProjDirPath$/../../../../bsp/kinetis/SDK_2.2_TWR-K64F120M/devices/MK64F12)
 include_directories($ProjDirPath$/../../../../bsp/kinetis/SDK_2.2_TWR-K64F120M/devices/MK64F12/drivers)
 include_directories($ProjDirPath$/../../../../components/finsh)
 include_directories($ProjDirPath$/../../../../include)
-include_directories($ProjDirPath$/../../../../components/drivers/include/drivers)
-include_directories($ProjDirPath$/../../../../components/drivers/include)
+include_directories($ProjDirPath$/../../../../bsp/kinetis/driver_wrapper/inc)
 SET(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DDEBUG "
 SET(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DTOOLCHAIN_GCC "
 SET(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -mcpu=cortex-m4")
@@ -68,14 +67,13 @@ SET(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -mcpu=cortex-m4")
 SET(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -mfloat-abi=hard")
 SET(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -mfpu=fpv4-sp-d16")
 SET(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -mthumb")
-include_directories($ProjDirPath$/../../../../batches/hello_world)
+include_directories($ProjDirPath$/../../../../pg/batches/hello_world)
 include_directories($ProjDirPath$/../../../../bsp/kinetis/SDK_2.2_TWR-K64F120M/boards/twrk64f120m)
 include_directories($ProjDirPath$/../../../../bsp/kinetis/SDK_2.2_TWR-K64F120M/devices/MK64F12)
 include_directories($ProjDirPath$/../../../../bsp/kinetis/SDK_2.2_TWR-K64F120M/devices/MK64F12/drivers)
 include_directories($ProjDirPath$/../../../../components/finsh)
 include_directories($ProjDirPath$/../../../../include)
-include_directories($ProjDirPath$/../../../../components/drivers/include/drivers)
-include_directories($ProjDirPath$/../../../../components/drivers/include)
+include_directories($ProjDirPath$/../../../../bsp/kinetis/driver_wrapper/inc)
 SET(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -DTOOLCHAIN_GCC "
 SET(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -mcpu=cortex-m4")
 SET(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -mfloat-abi=hard")
@@ -91,7 +89,7 @@ SET(CMAKE_EXE_LINKER_FLAGS_RELEASE "${CMAKE_EXE_LINKER_FLAGS_RELEASE} -mfpu=fpv4
 set(CMAKE_EXE_LINKER_FLAGS_RELEASE "${CMAKE_EXE_LINKER_FLAGS_RELEASE} -T${ProjDirPath}/../../../../bsp/kinetis/SDK_2.2_TWR-K64F120M/devices/MK64F12/gcc/MK64FN1M0xxx12_flash.ld -static")
 add_executable(hello_world.elf
 $ProjDirPath$/../../../../bsp/kinetis/SDK_2.2_TWR-K64F120M/devices/MK64F12/gcc/startup_MK64F12.S
-$ProjDirPath$/../../../../batches/hello_world/main.cpp
+$ProjDirPath$/../../../../pg/batches/hello_world/main.cpp
 $ProjDirPath$/../../../../bsp/kinetis/SDK_2.2_TWR-K64F120M/boards/twrk64f120m/clock_config.c
 $ProjDirPath$/../../../../bsp/kinetis/SDK_2.2_TWR-K64F120M/boards/twrk64f120m/clock_config.h
 $ProjDirPath$/../../../../bsp/kinetis/SDK_2.2_TWR-K64F120M/boards/twrk64f120m/pin_mux.c
@@ -115,6 +113,50 @@ $ProjDirPath$/../../../../bsp/kinetis/SDK_2.2_TWR-K64F120M/devices/MK64F12/drive
 $ProjDirPath$/../../../../bsp/kinetis/SDK_2.2_TWR-K64F120M/devices/MK64F12/drivers/fsl_common.h
 $ProjDirPath$/../../../../bsp/kinetis/SDK_2.2_TWR-K64F120M/devices/MK64F12/drivers/fsl_flash.c
 $ProjDirPath$/../../../../bsp/kinetis/SDK_2.2_TWR-K64F120M/devices/MK64F12/drivers/fsl_flash.h
+$ProjDirPath$/../../../../components/finsh/cmd.c
+$ProjDirPath$/../../../../components/finsh/finsh.h
+$ProjDirPath$/../../../../components/finsh/finsh_compiler.c
+$ProjDirPath$/../../../../components/finsh/finsh_error.c
+$ProjDirPath$/../../../../components/finsh/finsh_error.h
+$ProjDirPath$/../../../../components/finsh/finsh_heap.c
+$ProjDirPath$/../../../../components/finsh/finsh_heap.h
+$ProjDirPath$/../../../../components/finsh/finsh_init.c
+$ProjDirPath$/../../../../components/finsh/finsh_node.c
+$ProjDirPath$/../../../../components/finsh/finsh_node.h
+$ProjDirPath$/../../../../components/finsh/finsh_ops.c
+$ProjDirPath$/../../../../components/finsh/finsh_ops.h
+$ProjDirPath$/../../../../components/finsh/finsh_parser.c
+$ProjDirPath$/../../../../components/finsh/finsh_parser.h
+$ProjDirPath$/../../../../components/finsh/finsh_token.c
+$ProjDirPath$/../../../../components/finsh/finsh_token.h
+$ProjDirPath$/../../../../components/finsh/finsh_var.c
+$ProjDirPath$/../../../../components/finsh/finsh_var.h
+$ProjDirPath$/../../../../components/finsh/finsh_vm.c
+$ProjDirPath$/../../../../components/finsh/finsh_vm.h
+$ProjDirPath$/../../../../components/finsh/msh.c
+$ProjDirPath$/../../../../components/finsh/msh.h
+$ProjDirPath$/../../../../components/finsh/msh_cmd.c
+$ProjDirPath$/../../../../components/finsh/shell.c
+$ProjDirPath$/../../../../components/finsh/shell.h
+$ProjDirPath$/../../../../components/finsh/symbol.c
+$ProjDirPath$/../../../../src/clock.c
+$ProjDirPath$/../../../../src/device.c
+$ProjDirPath$/../../../../src/idle.c
+$ProjDirPath$/../../../../src/ipc.c
+$ProjDirPath$/../../../../src/irq.c
+$ProjDirPath$/../../../../src/kservice.c
+$ProjDirPath$/../../../../src/mem.c
+$ProjDirPath$/../../../../src/memheap.c
+$ProjDirPath$/../../../../src/mempool.c
+$ProjDirPath$/../../../../src/module.c
+$ProjDirPath$/../../../../src/object.c
+$ProjDirPath$/../../../../src/scheduler.c
+$ProjDirPath$/../../../../src/slab.c
+$ProjDirPath$/../../../../src/thread.c
+$ProjDirPath$/../../../../src/timer.c
+$ProjDirPath$/../../../../bsp/kinetis/driver_wrapper/uart/drv_uart.c
+$ProjDirPath$/../../../../bsp/kinetis/driver_wrapper/inc/drv_uart.h
+$ProjDirPath$/../../../../bsp/kinetis/driver_wrapper/uart/fsl_uart_irq_rt.c
 $ProjDirPath$/../../../../libcpu/arm/common/backtrace.c
 $ProjDirPath$/../../../../libcpu/arm/common/div0.c
 $ProjDirPath$/../../../../libcpu/arm/common/showmem.c

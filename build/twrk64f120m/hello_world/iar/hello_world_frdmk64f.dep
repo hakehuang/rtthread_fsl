@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>3611795523</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\..\src\idle.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_flash.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\components\finsh\cmd.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\ipc.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\boards\twrk64f120m\pin_mux.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_pit.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_uart.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_heap.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\system_MK64F12.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_enet.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_compiler.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_error.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_uart.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_gpio.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_pit.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_enet.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_smc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_common.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_flash.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_gpio.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_smc.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\iar\startup_MK64F12.s</file>
+      <file>$PROJ_DIR$\..\..\..\..\libcpu\arm\cortex-m4\context_iar.S</file>
+      <file>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\boards\twrk64f120m\clock_config.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\pg\batches\hello_world\main.cpp</file>
+      <file>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_node.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_ops.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_parser.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_init.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_var.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_token.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\components\finsh\msh_cmd.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\components\finsh\msh.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\components\finsh\shell.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\components\finsh\symbol.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\clock.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\device.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_vm.c</file>
+      <file>$PROJ_DIR$\debug\obj\cpuport.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\div0.o</file>
+      <file>$PROJ_DIR$\debug\obj\system_MK64F12.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flash.o</file>
+      <file>$PROJ_DIR$\debug\obj\system_MK64F12.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\div0.pbi</file>
+      <file>$PROJ_DIR$\frdmk64f\debug\rt_thread_demo.out</file>
+      <file>$PROJ_DIR$\debug\obj\startup_MK64F12.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pit.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_gpio.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\cpuport.o</file>
+      <file>$PROJ_DIR$\debug\obj\context_iar.o</file>
+      <file>$PROJ_DIR$\debug\obj\pin_mux.o</file>
+      <file>$PROJ_DIR$\debug\obj\backtrace.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_smc.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_enet.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_gpio.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_enet.o</file>
+      <file>$PROJ_DIR$\debug\obj\hello_world_frdmk64f.pbd</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_pit.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_uart.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\backtrace.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_flash.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\clock_config.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\showmem.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\pin_mux.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_common.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\main.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_smc.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_uart.o</file>
+      <file>$PROJ_DIR$\debug\obj\main.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\irq.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\thread.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\libcpu\arm\common\backtrace.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\libcpu\arm\cortex-m4\cpuport.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\mempool.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\scheduler.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\timer.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\libcpu\arm\common\div0.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\object.c</file>
+      <file>$PROJ_DIR$\debug\obj\showmem.o</file>
+      <file>$PROJ_DIR$\debug\obj\clock_config.o</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\mem.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\kservice.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\slab.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\module.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\memheap.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\libcpu\arm\common\showmem.c</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_compiler.o</file>
+      <file>$PROJ_DIR$\debug\obj\clock.o</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_heap.o</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_error.o</file>
+      <file>$PROJ_DIR$\debug\obj\cmd.o</file>
+      <file>$PROJ_DIR$\debug\obj\cmd.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\msh.o</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_ops.o</file>
+      <file>$PROJ_DIR$\debug\obj\module.o</file>
+      <file>$PROJ_DIR$\debug\obj\object.o</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_var.o</file>
+      <file>$PROJ_DIR$\debug\obj\symbol.o</file>
+      <file>$PROJ_DIR$\debug\obj\shell.o</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_compiler.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_init.o</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_parser.o</file>
+      <file>$PROJ_DIR$\debug\obj\device.o</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_token.o</file>
+      <file>$PROJ_DIR$\debug\obj\msh_cmd.o</file>
+      <file>$PROJ_DIR$\debug\obj\idle.o</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_vm.o</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_node.o</file>
+      <file>$PROJ_DIR$\debug\obj\ipc.o</file>
+      <file>$PROJ_DIR$\debug\obj\kservice.o</file>
+      <file>$PROJ_DIR$\debug\obj\mem.o</file>
+      <file>$PROJ_DIR$\debug\obj\slab.o</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_error.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_heap.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\thread.o</file>
+      <file>$PROJ_DIR$\debug\obj\scheduler.o</file>
+      <file>$PROJ_DIR$\debug\obj\timer.o</file>
+      <file>$PROJ_DIR$\debug\obj\memheap.o</file>
+      <file>$PROJ_DIR$\debug\obj\mempool.o</file>
+      <file>$PROJ_DIR$\debug\obj\irq.o</file>
+      <file>$PROJ_DIR$\debug\obj\mempool.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\mem.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\msh.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\device.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\ipc.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\module.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_init.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\shell.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\scheduler.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_var.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\timer.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\idle.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\msh_cmd.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\clock.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\irq.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\thread.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_node.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\memheap.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_ops.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_vm.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\kservice.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\slab.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_token.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\finsh_parser.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\symbol.pbi</file>
+      <file>$PROJ_DIR$\debug\obj\object.pbi</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 45</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\idle.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 107</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 133</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_flash.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\components\finsh\cmd.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 92</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 93</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\ipc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 110</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 126</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\boards\twrk64f120m\pin_mux.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_pit.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 47</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_heap.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 90</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\system_MK64F12.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_enet.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 57</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_compiler.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 88</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 101</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_error.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 91</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 114</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_uart.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 69</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_gpio.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 56</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_smc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 68</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 54</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\drivers\fsl_common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 49</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\devices\MK64F12\iar\startup_MK64F12.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 46</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\libcpu\arm\cortex-m4\context_iar.S</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 51</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\bsp\kinetis\SDK_2.2_TWR-K64F120M\boards\twrk64f120m\clock_config.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 81</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 63</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\pg\batches\hello_world\main.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 67</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_node.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 109</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 138</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_ops.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 95</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 140</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_parser.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 103</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 145</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_init.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 128</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_var.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 98</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 131</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_token.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 105</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 144</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\components\finsh\msh_cmd.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 106</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 134</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\components\finsh\msh.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 94</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 124</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\components\finsh\shell.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 100</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 129</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\components\finsh\symbol.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 99</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 146</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\clock.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 89</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 135</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\device.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 104</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 125</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\components\finsh\finsh_vm.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 108</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 141</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\irq.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 121</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 136</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\thread.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 116</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 137</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\libcpu\arm\common\backtrace.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 61</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\libcpu\arm\cortex-m4\cpuport.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 50</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\mempool.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 120</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 122</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\scheduler.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 117</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 130</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\timer.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 118</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 132</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\libcpu\arm\common\div0.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 40</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\object.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 97</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 147</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\mem.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 112</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 123</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\kservice.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 111</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 142</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\slab.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 113</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 143</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\module.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 96</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 127</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\memheap.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 119</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 139</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\libcpu\arm\common\showmem.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 80</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 64</file>
+        </tool>
+      </outputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

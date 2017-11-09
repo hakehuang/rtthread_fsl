@@ -9,7 +9,6 @@ finish:
                 rootdir: "rt-thread-path"
   modules:
     finsh:
-      mode: post-process-app
       name              : finsh
       files:
         - source        : components/finsh/cmd.c

@@ -10,7 +10,6 @@ rt_core:
               rootdir: "rt-thread-path"
   modules:
     core:
-      mode: post-process-app
       name              : core
       files:
         - source        : src/clock.c

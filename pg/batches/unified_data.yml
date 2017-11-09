@@ -12,7 +12,7 @@ hello_world:
   - fsl_flash
   - finish
   - rt_core
-  - rt_drivers
+  - rt_uart
   - driver_wrapper
   - cortex-m4
   iar:
@@ -44,9 +44,7 @@ hello_world:
           rootdir: rt-thread-path
         - path: include
           rootdir: rt-thread-path
-        - path: components/drivers/include/drivers
-          rootdir: rt-thread-path
-        - path: components/drivers/include/
+        - path: bsp/kinetis/driver_wrapper/inc
           rootdir: rt-thread-path
         cc_flags:
         - "--cpu=Cortex-M4"
@@ -96,9 +94,7 @@ hello_world:
           rootdir: rt-thread-path
         - path: include
           rootdir: rt-thread-path
-        - path: components/drivers/include/drivers
-          rootdir: rt-thread-path
-        - path: components/drivers/include/
+        - path: bsp/kinetis/driver_wrapper/inc
           rootdir: rt-thread-path
         cc_flags:
         - "--cpu=Cortex-M4"
@@ -217,24 +213,199 @@ hello_world:
       rootdir: fsl_sdk_path
       virtual_dir: drivers
     - &11
+      source: components/finsh/cmd.c
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &12
+      source: components/finsh/finsh.h
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &13
+      source: components/finsh/finsh_compiler.c
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &14
+      source: components/finsh/finsh_error.c
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &15
+      source: components/finsh/finsh_error.h
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &16
+      source: components/finsh/finsh_heap.c
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &17
+      source: components/finsh/finsh_heap.h
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &18
+      source: components/finsh/finsh_init.c
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &19
+      source: components/finsh/finsh_node.c
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &20
+      source: components/finsh/finsh_node.h
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &21
+      source: components/finsh/finsh_ops.c
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &22
+      source: components/finsh/finsh_ops.h
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &23
+      source: components/finsh/finsh_parser.c
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &24
+      source: components/finsh/finsh_parser.h
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &25
+      source: components/finsh/finsh_token.c
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &26
+      source: components/finsh/finsh_token.h
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &27
+      source: components/finsh/finsh_var.c
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &28
+      source: components/finsh/finsh_var.h
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &29
+      source: components/finsh/finsh_vm.c
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &30
+      source: components/finsh/finsh_vm.h
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &31
+      source: components/finsh/msh.c
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &32
+      source: components/finsh/msh.h
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &33
+      source: components/finsh/msh_cmd.c
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &34
+      source: components/finsh/shell.c
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &35
+      source: components/finsh/shell.h
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &36
+      source: components/finsh/symbol.c
+      virtual-dir: finsh
+      rootdir: rt-thread-path
+    - &37
+      source: src/clock.c
+      virtual-dir: rt_core
+      rootdir: rt-thread-path
+    - &38
+      source: src/device.c
+      virtual-dir: rt_core
+      rootdir: rt-thread-path
+    - &39
+      source: src/idle.c
+      virtual-dir: rt_core
+      rootdir: rt-thread-path
+    - &40
+      source: src/ipc.c
+      virtual-dir: rt_core
+      rootdir: rt-thread-path
+    - &41
+      source: src/irq.c
+      virtual-dir: rt_core
+      rootdir: rt-thread-path
+    - &42
+      source: src/kservice.c
+      virtual-dir: rt_core
+      rootdir: rt-thread-path
+    - &43
+      source: src/mem.c
+      virtual-dir: rt_core
+      rootdir: rt-thread-path
+    - &44
+      source: src/memheap.c
+      virtual-dir: rt_core
+      rootdir: rt-thread-path
+    - &45
+      source: src/mempool.c
+      virtual-dir: rt_core
+      rootdir: rt-thread-path
+    - &46
+      source: src/module.c
+      virtual-dir: rt_core
+      rootdir: rt-thread-path
+    - &47
+      source: src/object.c
+      virtual-dir: rt_core
+      rootdir: rt-thread-path
+    - &48
+      source: src/scheduler.c
+      virtual-dir: rt_core
+      rootdir: rt-thread-path
+    - &49
+      source: src/slab.c
+      virtual-dir: rt_core
+      rootdir: rt-thread-path
+    - &50
+      source: src/thread.c
+      virtual-dir: rt_core
+      rootdir: rt-thread-path
+    - &51
+      source: src/timer.c
+      virtual-dir: rt_core
+      rootdir: rt-thread-path
+    - &52
+      source: bsp/kinetis/driver_wrapper/uart/drv_uart.c
+      virtual-dir: rt_uart
+      rootdir: rt-thread-path
+    - &53
+      source: bsp/kinetis/driver_wrapper/inc/drv_uart.h
+      virtual-dir: rt_uart
+      rootdir: rt-thread-path
+    - &54
+      source: bsp/kinetis/driver_wrapper/uart/fsl_uart_irq_rt.c
+      virtual-dir: rt_uart
+      rootdir: rt-thread-path
+    - &55
       source: libcpu/arm/common/backtrace.c
       virtual-dir: arm
       rootdir: rt-thread-path
-    - &12
+    - &56
       source: libcpu/arm/common/div0.c
       virtual-dir: arm
       rootdir: rt-thread-path
-    - &13
+    - &57
       source: libcpu/arm/common/showmem.c
       virtual-dir: arm
       rootdir: rt-thread-path
-    - &14
+    - &58
       source: libcpu/arm/cortex-m4/cpuport.c
       virtual-dir: cortex_m4
       rootdir: rt-thread-path
   document:
-    board: frdmk64f
-    project_name: hello_world
+    board: twrk64f120m
   mdk:
     targets:
       debug:
@@ -266,9 +437,7 @@ hello_world:
           rootdir: rt-thread-path
         - path: include
           rootdir: rt-thread-path
-        - path: components/drivers/include/drivers
-          rootdir: rt-thread-path
-        - path: components/drivers/include/
+        - path: bsp/kinetis/driver_wrapper/inc
           rootdir: rt-thread-path
         cc_flags:
         - "--cpu Cortex-M4.fp"
@@ -325,9 +494,7 @@ hello_world:
           rootdir: rt-thread-path
         - path: include
           rootdir: rt-thread-path
-        - path: components/drivers/include/drivers
-          rootdir: rt-thread-path
-        - path: components/drivers/include/
+        - path: bsp/kinetis/driver_wrapper/inc
           rootdir: rt-thread-path
         cc_flags:
         - "--cpu Cortex-M4.fp"
@@ -424,6 +591,50 @@ hello_world:
     - *12
     - *13
     - *14
+    - *15
+    - *16
+    - *17
+    - *18
+    - *19
+    - *20
+    - *21
+    - *22
+    - *23
+    - *24
+    - *25
+    - *26
+    - *27
+    - *28
+    - *29
+    - *30
+    - *31
+    - *32
+    - *33
+    - *34
+    - *35
+    - *36
+    - *37
+    - *38
+    - *39
+    - *40
+    - *41
+    - *42
+    - *43
+    - *44
+    - *45
+    - *46
+    - *47
+    - *48
+    - *49
+    - *50
+    - *51
+    - *52
+    - *53
+    - *54
+    - *55
+    - *56
+    - *57
+    - *58
   cmake:
     targets:
       debug:
@@ -456,9 +667,7 @@ hello_world:
           rootdir: rt-thread-path
         - path: include
           rootdir: rt-thread-path
-        - path: components/drivers/include/drivers
-          rootdir: rt-thread-path
-        - path: components/drivers/include/
+        - path: bsp/kinetis/driver_wrapper/inc
           rootdir: rt-thread-path
         cc_flags:
         - "-mcpu=cortex-m4"
@@ -518,9 +727,7 @@ hello_world:
           rootdir: rt-thread-path
         - path: include
           rootdir: rt-thread-path
-        - path: components/drivers/include/drivers
-          rootdir: rt-thread-path
-        - path: components/drivers/include/
+        - path: bsp/kinetis/driver_wrapper/inc
           rootdir: rt-thread-path
         cc_flags:
         - "-mcpu=cortex-m4"
@@ -615,3 +822,47 @@ hello_world:
     - *12
     - *13
     - *14
+    - *15
+    - *16
+    - *17
+    - *18
+    - *19
+    - *20
+    - *21
+    - *22
+    - *23
+    - *24
+    - *25
+    - *26
+    - *27
+    - *28
+    - *29
+    - *30
+    - *31
+    - *32
+    - *33
+    - *34
+    - *35
+    - *36
+    - *37
+    - *38
+    - *39
+    - *40
+    - *41
+    - *42
+    - *43
+    - *44
+    - *45
+    - *46
+    - *47
+    - *48
+    - *49
+    - *50
+    - *51
+    - *52
+    - *53
+    - *54
+    - *55
+    - *56
+    - *57
+    - *58

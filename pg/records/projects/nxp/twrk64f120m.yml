@@ -4,7 +4,7 @@ __load__:
   - component/nxp/sdk/MK64FN1M0xxx12_sdk2.yml
   - component/rt_thread/finish.yml
   - component/rt_thread/rt_core.yml
-  - component/rt_thread/rt_drivers.yml
+  - component/rt_thread/driver_wrapper.yml
   - component/rt_thread/libcpu_arm.yml
   - component/rt_thread/libcpu_cortex-m4.yml
 
@@ -24,7 +24,7 @@ hello_world:
     - fsl_flash
     - finish
     - rt_core
-    - rt_drivers
+    - rt_uart
     - arm
     - cortex-m4
   attribute: 'required'

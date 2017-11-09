@@ -1,8 +1,22 @@
 __load__:
-  - rt_thread/driver_wrapper.yml
+  - rt_thread/driver_wrapper/rt_uart.yml
+  - rt_thread/driver_wrapper/rt_lpuart.yml
+  - rt_thread/driver_wrapper/rt_lpsci.yml
 
-driver_wrapper:
+rt_uart:
   configuration:
     section-type: component
     meta_components:
-      - driver_wrapper
+      - rt_uart
+
+rt_lpuart:
+  configuration:
+    section-type: component
+    meta_components:
+      - rt_lpuart
+
+rt_lpsci:
+  configuration:
+    section-type: component
+    meta_components:
+      - rt_lpsci

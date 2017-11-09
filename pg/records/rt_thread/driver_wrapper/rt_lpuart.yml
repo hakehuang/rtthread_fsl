@@ -1,0 +1,20 @@
+rt_lpuart:
+  configuration:
+    tools:
+      __common__:
+        config:
+          __common__:
+            cc_include:
+              - path: bsp/kinetis/driver_wrapper/inc
+                rootdir: "rt-thread-path"
+  modules:
+    rt_lpuart:
+      name              : rt_lpuart
+      files:
+        - source        : bsp/kinetis/driver_wrapper/lpuart/drv_lpuart.c
+          virtual-dir   : rt_lpuart
+          rootdir:      "rt-thread-path" 
+        - source        : bsp/kinetis/driver_wrapper/inc/drv_lpuart.h
+          virtual-dir   : rt_lpuart
+          rootdir:      "rt-thread-path"
+

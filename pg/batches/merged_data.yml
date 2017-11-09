@@ -12,7 +12,7 @@ hello_world:
   - fsl_flash
   - finish
   - rt_core
-  - rt_drivers
+  - rt_uart
   - arm
   - cortex-m4
   attribute: required
@@ -444,11 +444,11 @@ arm:
         rootdir: rt-thread-path
   mode: post-process-app
   attribute: required
-rt_drivers:
+rt_uart:
   configuration:
     section-type: component
     meta_components:
-    - rt_drivers
+    - rt_uart
     tools:
       iar:
         config:
@@ -463,9 +463,7 @@ rt_drivers:
               TOOLCHAIN_IAR: 
             as_defines: {}
             cc_include:
-            - path: components/drivers/include/drivers
-              rootdir: rt-thread-path
-            - path: components/drivers/include/
+            - path: bsp/kinetis/driver_wrapper/inc
               rootdir: rt-thread-path
             cc_flags: []
             as_flags: []
@@ -482,9 +480,7 @@ rt_drivers:
             cxx_defines:
               TOOLCHAIN_IAR: 
             cc_include:
-            - path: components/drivers/include/drivers
-              rootdir: rt-thread-path
-            - path: components/drivers/include/
+            - path: bsp/kinetis/driver_wrapper/inc
               rootdir: rt-thread-path
             cc_flags: []
             as_flags: []
@@ -510,9 +506,7 @@ rt_drivers:
               TOOLCHAIN_ARM_STD: 
             as_defines: {}
             cc_include:
-            - path: components/drivers/include/drivers
-              rootdir: rt-thread-path
-            - path: components/drivers/include/
+            - path: bsp/kinetis/driver_wrapper/inc
               rootdir: rt-thread-path
             cc_flags: []
             as_flags: []
@@ -530,9 +524,7 @@ rt_drivers:
             cxx_defines:
               TOOLCHAIN_ARM_STD: 
             cc_include:
-            - path: components/drivers/include/drivers
-              rootdir: rt-thread-path
-            - path: components/drivers/include/
+            - path: bsp/kinetis/driver_wrapper/inc
               rootdir: rt-thread-path
             cc_flags: []
             as_flags: []
@@ -557,9 +549,7 @@ rt_drivers:
               TOOLCHAIN_GCC: 
             as_defines: {}
             cc_include:
-            - path: components/drivers/include/drivers
-              rootdir: rt-thread-path
-            - path: components/drivers/include/
+            - path: bsp/kinetis/driver_wrapper/inc
               rootdir: rt-thread-path
             cc_flags: []
             as_flags: []
@@ -576,9 +566,7 @@ rt_drivers:
             cxx_defines:
               TOOLCHAIN_GCC: 
             cc_include:
-            - path: components/drivers/include/drivers
-              rootdir: rt-thread-path
-            - path: components/drivers/include/
+            - path: bsp/kinetis/driver_wrapper/inc
               rootdir: rt-thread-path
             cc_flags: []
             as_flags: []
@@ -591,7 +579,19 @@ rt_drivers:
         load_to:
           debug: {}
           release: {}
-  modules: {}
+  modules:
+    rt_uart:
+      name: rt_uart
+      files:
+      - source: bsp/kinetis/driver_wrapper/uart/drv_uart.c
+        virtual-dir: rt_uart
+        rootdir: rt-thread-path
+      - source: bsp/kinetis/driver_wrapper/inc/drv_uart.h
+        virtual-dir: rt_uart
+        rootdir: rt-thread-path
+      - source: bsp/kinetis/driver_wrapper/uart/fsl_uart_irq_rt.c
+        virtual-dir: rt_uart
+        rootdir: rt-thread-path
   mode: post-process-app
   attribute: required
 rt_core:
@@ -729,7 +729,55 @@ rt_core:
         load_to:
           debug: {}
           release: {}
-  modules: {}
+  modules:
+    core:
+      name: core
+      files:
+      - source: src/clock.c
+        virtual-dir: rt_core
+        rootdir: rt-thread-path
+      - source: src/device.c
+        virtual-dir: rt_core
+        rootdir: rt-thread-path
+      - source: src/idle.c
+        virtual-dir: rt_core
+        rootdir: rt-thread-path
+      - source: src/ipc.c
+        virtual-dir: rt_core
+        rootdir: rt-thread-path
+      - source: src/irq.c
+        virtual-dir: rt_core
+        rootdir: rt-thread-path
+      - source: src/kservice.c
+        virtual-dir: rt_core
+        rootdir: rt-thread-path
+      - source: src/mem.c
+        virtual-dir: rt_core
+        rootdir: rt-thread-path
+      - source: src/memheap.c
+        virtual-dir: rt_core
+        rootdir: rt-thread-path
+      - source: src/mempool.c
+        virtual-dir: rt_core
+        rootdir: rt-thread-path
+      - source: src/module.c
+        virtual-dir: rt_core
+        rootdir: rt-thread-path
+      - source: src/object.c
+        virtual-dir: rt_core
+        rootdir: rt-thread-path
+      - source: src/scheduler.c
+        virtual-dir: rt_core
+        rootdir: rt-thread-path
+      - source: src/slab.c
+        virtual-dir: rt_core
+        rootdir: rt-thread-path
+      - source: src/thread.c
+        virtual-dir: rt_core
+        rootdir: rt-thread-path
+      - source: src/timer.c
+        virtual-dir: rt_core
+        rootdir: rt-thread-path
   mode: post-process-app
   attribute: required
 finish:
@@ -867,7 +915,88 @@ finish:
         load_to:
           debug: {}
           release: {}
-  modules: {}
+  modules:
+    finsh:
+      name: finsh
+      files:
+      - source: components/finsh/cmd.c
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh.h
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_compiler.c
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_error.c
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_error.h
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_heap.c
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_heap.h
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_init.c
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_node.c
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_node.h
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_ops.c
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_ops.h
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_parser.c
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_parser.h
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_token.c
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_token.h
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_var.c
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_var.h
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_vm.c
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/finsh_vm.h
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/msh.c
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/msh.h
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/msh_cmd.c
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/shell.c
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/shell.h
+        virtual-dir: finsh
+        rootdir: rt-thread-path
+      - source: components/finsh/symbol.c
+        virtual-dir: finsh
+        rootdir: rt-thread-path
   mode: post-process-app
   attribute: required
 fsl_uart:

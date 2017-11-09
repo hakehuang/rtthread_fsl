@@ -1,0 +1,20 @@
+rt_uart:
+  configuration:
+    tools:
+      __common__:
+        config:
+          __common__:
+            cc_include:
+              - path: bsp/kinetis/driver_wrapper/inc
+                rootdir: "rt-thread-path"
+  modules:
+    rt_uart:
+      name              : rt_uart
+      files:
+        - source        : bsp/kinetis/driver_wrapper/uart/drv_uart.c
+          virtual-dir   : rt_uart
+          rootdir:      "rt-thread-path" 
+        - source        : bsp/kinetis/driver_wrapper/inc/drv_uart.h
+          virtual-dir   : rt_uart
+          rootdir:      "rt-thread-path"
+
